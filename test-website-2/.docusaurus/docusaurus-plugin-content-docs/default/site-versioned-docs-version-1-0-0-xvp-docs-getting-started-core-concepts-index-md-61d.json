@@ -6,17 +6,17 @@
   "source": "@site/versioned_docs/version-1.0.0/xvp-docs/getting-started/core-concepts/index.md",
   "sourceDirName": "xvp-docs/getting-started/core-concepts",
   "slug": "/xvp-docs/getting-started/core-concepts/",
-  "permalink": "/docs/xvp-docs/getting-started/core-concepts/",
+  "permalink": "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/xvp-docs/getting-started/core-concepts/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/tags/getting-started"
     },
     {
       "label": "Core Concepts",
-      "permalink": "/docs/tags/core-concepts"
+      "permalink": "/dousarus-demo/docs/tags/core-concepts"
     }
   ],
   "version": "1.0.0",
@@ -32,10 +32,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Home",
-    "permalink": "/docs/xvp-docs/getting-started/"
+    "permalink": "/dousarus-demo/docs/xvp-docs/getting-started/"
   },
   "next": {
     "title": "Accessibility",
-    "permalink": "/docs/xvp-docs/getting-started/core-concepts/accessibility/"
+    "permalink": "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/accessibility/"
   }
 }

@@ -9,7 +9,7 @@ const config = {
   title: 'XVP and Firebolt Example',
   tagline: 'Showcase the power of a static site generator for our docs',
   url: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
-  baseUrl: '/',
+  baseUrl: '/dousarus-demo/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

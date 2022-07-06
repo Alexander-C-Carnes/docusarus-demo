@@ -6,17 +6,17 @@
   "source": "@site/docs/xvp-docs/getting-started/index.md",
   "sourceDirName": "xvp-docs/getting-started",
   "slug": "/xvp-docs/getting-started/",
-  "permalink": "/docs/next/xvp-docs/getting-started/",
+  "permalink": "/dousarus-demo/docs/next/xvp-docs/getting-started/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/xvp-docs/getting-started/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/next/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/next/tags/getting-started"
     },
     {
       "label": "Quick Start",
-      "permalink": "/docs/next/tags/quick-start"
+      "permalink": "/dousarus-demo/docs/next/tags/quick-start"
     }
   ],
   "version": "current",
@@ -32,10 +32,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "XVP Docs",
-    "permalink": "/docs/next/category/xvp-docs"
+    "permalink": "/dousarus-demo/docs/next/category/xvp-docs"
   },
   "next": {
     "title": "Core Concepts",
-    "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/"
+    "permalink": "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/"
   }
 }

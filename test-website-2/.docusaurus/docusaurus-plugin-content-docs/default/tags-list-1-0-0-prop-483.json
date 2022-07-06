@@ -1,112 +1,112 @@
 [
   {
     "label": "Accessibility",
-    "permalink": "/docs/tags/accessibility",
+    "permalink": "/dousarus-demo/docs/tags/accessibility",
     "count": 3
   },
   {
     "label": "Firebolt",
-    "permalink": "/docs/tags/firebolt",
+    "permalink": "/dousarus-demo/docs/tags/firebolt",
     "count": 1
   },
   {
     "label": "Getting started",
-    "permalink": "/docs/tags/getting-started",
+    "permalink": "/dousarus-demo/docs/tags/getting-started",
     "count": 18
   },
   {
     "label": "Core Concepts",
-    "permalink": "/docs/tags/core-concepts",
+    "permalink": "/dousarus-demo/docs/tags/core-concepts",
     "count": 14
   },
   {
     "label": "Deep Linking",
-    "permalink": "/docs/tags/deep-linking",
+    "permalink": "/dousarus-demo/docs/tags/deep-linking",
     "count": 1
   },
   {
     "label": "Email Prefill",
-    "permalink": "/docs/tags/email-prefill",
+    "permalink": "/dousarus-demo/docs/tags/email-prefill",
     "count": 1
   },
   {
     "label": "Content Availability",
-    "permalink": "/docs/tags/content-availability",
+    "permalink": "/dousarus-demo/docs/tags/content-availability",
     "count": 1
   },
   {
     "label": "Content Catalogs",
-    "permalink": "/docs/tags/content-catalogs",
+    "permalink": "/dousarus-demo/docs/tags/content-catalogs",
     "count": 6
   },
   {
     "label": "DVR",
-    "permalink": "/docs/tags/dvr",
+    "permalink": "/dousarus-demo/docs/tags/dvr",
     "count": 1
   },
   {
     "label": "Linear",
-    "permalink": "/docs/tags/linear",
+    "permalink": "/dousarus-demo/docs/tags/linear",
     "count": 1
   },
   {
     "label": "VOD",
-    "permalink": "/docs/tags/vod",
+    "permalink": "/dousarus-demo/docs/tags/vod",
     "count": 2
   },
   {
     "label": "Transact",
-    "permalink": "/docs/tags/transact",
+    "permalink": "/dousarus-demo/docs/tags/transact",
     "count": 1
   },
   {
     "label": "Content Entitlement",
-    "permalink": "/docs/tags/content-entitlement",
+    "permalink": "/dousarus-demo/docs/tags/content-entitlement",
     "count": 1
   },
   {
     "label": "Entities",
-    "permalink": "/docs/tags/entities",
+    "permalink": "/dousarus-demo/docs/tags/entities",
     "count": 1
   },
   {
     "label": "Privacy",
-    "permalink": "/docs/tags/privacy",
+    "permalink": "/dousarus-demo/docs/tags/privacy",
     "count": 1
   },
   {
     "label": "Optouts",
-    "permalink": "/docs/tags/optouts",
+    "permalink": "/dousarus-demo/docs/tags/optouts",
     "count": 1
   },
   {
     "label": "Profiles",
-    "permalink": "/docs/tags/profiles",
+    "permalink": "/dousarus-demo/docs/tags/profiles",
     "count": 1
   },
   {
     "label": "Owners",
-    "permalink": "/docs/tags/owners",
+    "permalink": "/dousarus-demo/docs/tags/owners",
     "count": 1
   },
   {
     "label": "Quick Start",
-    "permalink": "/docs/tags/quick-start",
+    "permalink": "/dousarus-demo/docs/tags/quick-start",
     "count": 4
   },
   {
     "label": "Experience",
-    "permalink": "/docs/tags/experience",
+    "permalink": "/dousarus-demo/docs/tags/experience",
     "count": 1
   },
   {
     "label": "Identity and Access",
-    "permalink": "/docs/tags/identity-and-access",
+    "permalink": "/dousarus-demo/docs/tags/identity-and-access",
     "count": 1
   },
   {
     "label": "Ingest",
-    "permalink": "/docs/tags/ingest",
+    "permalink": "/dousarus-demo/docs/tags/ingest",
     "count": 1
   }
 ]

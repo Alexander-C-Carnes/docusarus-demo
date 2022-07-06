@@ -6,21 +6,21 @@
   "source": "@site/versioned_docs/version-0.6.0/xvp-docs/getting-started/core-concepts/content-availability/index.md",
   "sourceDirName": "xvp-docs/getting-started/core-concepts/content-availability",
   "slug": "/xvp-docs/getting-started/core-concepts/content-availability/",
-  "permalink": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/",
+  "permalink": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.6.0/xvp-docs/getting-started/core-concepts/content-availability/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/0.6.0/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/0.6.0/tags/getting-started"
     },
     {
       "label": "Core Concepts",
-      "permalink": "/docs/0.6.0/tags/core-concepts"
+      "permalink": "/dousarus-demo/docs/0.6.0/tags/core-concepts"
     },
     {
       "label": "Content Availability",
-      "permalink": "/docs/0.6.0/tags/content-availability"
+      "permalink": "/dousarus-demo/docs/0.6.0/tags/content-availability"
     }
   ],
   "version": "0.6.0",
@@ -37,10 +37,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Accessibility",
-    "permalink": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/"
+    "permalink": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/"
   },
   "next": {
     "title": "Content Catalogs",
-    "permalink": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/"
+    "permalink": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/"
   }
 }

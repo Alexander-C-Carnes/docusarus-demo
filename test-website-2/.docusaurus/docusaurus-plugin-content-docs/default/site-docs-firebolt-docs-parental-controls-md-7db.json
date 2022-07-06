@@ -6,7 +6,7 @@
   "source": "@site/docs/firebolt/docs/parental-controls.md",
   "sourceDirName": "firebolt/docs",
   "slug": "/firebolt/docs/parental-controls",
-  "permalink": "/docs/next/firebolt/docs/parental-controls",
+  "permalink": "/dousarus-demo/docs/next/firebolt/docs/parental-controls",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/firebolt/docs/parental-controls.md",
   "tags": [],
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Open GMRSS Specification",
-    "permalink": "/docs/next/firebolt/docs/open-gmrss-format"
+    "permalink": "/dousarus-demo/docs/next/firebolt/docs/open-gmrss-format"
   },
   "next": {
     "title": "Profile Flags",
-    "permalink": "/docs/next/firebolt/docs/profile-flags"
+    "permalink": "/dousarus-demo/docs/next/firebolt/docs/profile-flags"
   }
 }

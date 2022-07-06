@@ -6,21 +6,21 @@
   "source": "@site/versioned_docs/version-0.7.0/xvp-docs/getting-started/identity-and-access/index.md",
   "sourceDirName": "xvp-docs/getting-started/identity-and-access",
   "slug": "/xvp-docs/getting-started/identity-and-access/",
-  "permalink": "/docs/0.7.0/xvp-docs/getting-started/identity-and-access/",
+  "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/identity-and-access/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.7.0/xvp-docs/getting-started/identity-and-access/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/0.7.0/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/getting-started"
     },
     {
       "label": "Quick Start",
-      "permalink": "/docs/0.7.0/tags/quick-start"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/quick-start"
     },
     {
       "label": "Identity and Access",
-      "permalink": "/docs/0.7.0/tags/identity-and-access"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/identity-and-access"
     }
   ],
   "version": "0.7.0",
@@ -37,10 +37,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Experience",
-    "permalink": "/docs/0.7.0/xvp-docs/getting-started/experience/"
+    "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/experience/"
   },
   "next": {
     "title": "Ingest",
-    "permalink": "/docs/0.7.0/xvp-docs/getting-started/ingest/"
+    "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/ingest/"
   }
 }

@@ -6,7 +6,7 @@
   "source": "@site/versioned_docs/version-0.7.0/tutorial-basics/create-a-document.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/create-a-document",
-  "permalink": "/docs/0.7.0/tutorial-basics/create-a-document",
+  "permalink": "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-document",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.7.0/tutorial-basics/create-a-document.md",
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Create a Page",
-    "permalink": "/docs/0.7.0/tutorial-basics/create-a-page"
+    "permalink": "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-page"
   },
   "next": {
     "title": "Create a Blog Post",
-    "permalink": "/docs/0.7.0/tutorial-basics/create-a-blog-post"
+    "permalink": "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-blog-post"
   }
 }

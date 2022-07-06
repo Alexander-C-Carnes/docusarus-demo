@@ -6,21 +6,21 @@
   "source": "@site/versioned_docs/version-0.7.0/xvp-docs/getting-started/experience/index.md",
   "sourceDirName": "xvp-docs/getting-started/experience",
   "slug": "/xvp-docs/getting-started/experience/",
-  "permalink": "/docs/0.7.0/xvp-docs/getting-started/experience/",
+  "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/experience/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.7.0/xvp-docs/getting-started/experience/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/0.7.0/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/getting-started"
     },
     {
       "label": "Quick Start",
-      "permalink": "/docs/0.7.0/tags/quick-start"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/quick-start"
     },
     {
       "label": "Experience",
-      "permalink": "/docs/0.7.0/tags/experience"
+      "permalink": "/dousarus-demo/docs/0.7.0/tags/experience"
     }
   ],
   "version": "0.7.0",
@@ -37,10 +37,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Profiles and Owners",
-    "permalink": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/profile-and-owners/"
+    "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/profile-and-owners/"
   },
   "next": {
     "title": "Identity and Access",
-    "permalink": "/docs/0.7.0/xvp-docs/getting-started/identity-and-access/"
+    "permalink": "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/identity-and-access/"
   }
 }

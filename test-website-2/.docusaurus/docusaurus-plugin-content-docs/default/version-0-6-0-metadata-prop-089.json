@@ -23,139 +23,139 @@
               {
                 "type": "link",
                 "label": "Accessibility",
-                "href": "/docs/0.6.0/firebolt/docs/accessibility",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/accessibility",
                 "docId": "firebolt/docs/accessibility"
               },
               {
                 "type": "link",
                 "label": "Content Discovery",
-                "href": "/docs/0.6.0/firebolt/docs/content-discovery",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/content-discovery",
                 "docId": "firebolt/docs/content-discovery"
               },
               {
                 "type": "link",
                 "label": "Deep Linking",
-                "href": "/docs/0.6.0/firebolt/docs/deep-linking",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/deep-linking",
                 "docId": "firebolt/docs/deep-linking"
               },
               {
                 "type": "link",
                 "label": "Email Prefill",
-                "href": "/docs/0.6.0/firebolt/docs/email-prefill",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/email-prefill",
                 "docId": "firebolt/docs/email-prefill"
               },
               {
                 "type": "link",
                 "label": "Listening for Events",
-                "href": "/docs/0.6.0/firebolt/docs/listening-for-events",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/listening-for-events",
                 "docId": "firebolt/docs/listening-for-events"
               },
               {
                 "type": "link",
                 "label": "Metadata Ingegration",
-                "href": "/docs/0.6.0/firebolt/docs/metadata-integration",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/metadata-integration",
                 "docId": "firebolt/docs/metadata-integration"
               },
               {
                 "type": "link",
                 "label": "Open GMRSS Specification",
-                "href": "/docs/0.6.0/firebolt/docs/open-gmrss-format",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/open-gmrss-format",
                 "docId": "firebolt/docs/open-gmrss-format"
               },
               {
                 "type": "link",
                 "label": "Parental Controls",
-                "href": "/docs/0.6.0/firebolt/docs/parental-controls",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/parental-controls",
                 "docId": "firebolt/docs/parental-controls"
               },
               {
                 "type": "link",
                 "label": "Profile Flags",
-                "href": "/docs/0.6.0/firebolt/docs/profile-flags",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/profile-flags",
                 "docId": "firebolt/docs/profile-flags"
               },
               {
                 "type": "link",
                 "label": "Remote Specifications",
-                "href": "/docs/0.6.0/firebolt/docs/remote-specifications",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/remote-specifications",
                 "docId": "firebolt/docs/remote-specifications"
               },
               {
                 "type": "link",
                 "label": "Sign in and sign up",
-                "href": "/docs/0.6.0/firebolt/docs/sign-in-and-sign-up",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/sign-in-and-sign-up",
                 "docId": "firebolt/docs/sign-in-and-sign-up"
               },
               {
                 "type": "link",
                 "label": "Voice Commands",
-                "href": "/docs/0.6.0/firebolt/docs/voice-commands",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/voice-commands",
                 "docId": "firebolt/docs/voice-commands"
               },
               {
                 "type": "link",
                 "label": "Ad Content Standards",
-                "href": "/docs/0.6.0/firebolt/docs/ad-content-standards",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/ad-content-standards",
                 "docId": "firebolt/docs/ad-content-standards"
               },
               {
                 "type": "link",
                 "label": "App Rating",
-                "href": "/docs/0.6.0/firebolt/docs/app-rating-guidelines",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/app-rating-guidelines",
                 "docId": "firebolt/docs/app-rating-guidelines"
               },
               {
                 "type": "link",
                 "label": "App Requirements",
-                "href": "/docs/0.6.0/firebolt/docs/app-requirements",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/app-requirements",
                 "docId": "firebolt/docs/app-requirements"
               },
               {
                 "type": "link",
                 "label": "Closed Captions",
-                "href": "/docs/0.6.0/firebolt/docs/closed-captions",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/closed-captions",
                 "docId": "firebolt/docs/closed-captions"
               },
               {
                 "type": "link",
                 "label": "Content & Service Guidelines",
-                "href": "/docs/0.6.0/firebolt/docs/content-service-guidelines",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/content-service-guidelines",
                 "docId": "firebolt/docs/content-service-guidelines"
               },
               {
                 "type": "link",
                 "label": "App Lifecycle",
-                "href": "/docs/0.6.0/firebolt/docs/lifecycle-management",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/lifecycle-management",
                 "docId": "firebolt/docs/lifecycle-management"
               },
               {
                 "type": "link",
                 "label": "Localization",
-                "href": "/docs/0.6.0/firebolt/docs/localization",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/localization",
                 "docId": "firebolt/docs/localization"
               },
               {
                 "type": "link",
                 "label": "Getting Started",
-                "href": "/docs/0.6.0/firebolt/docs/quick-start-guide",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/quick-start-guide",
                 "docId": "firebolt/docs/quick-start-guide"
               },
               {
                 "type": "link",
                 "label": "Voice Guidance",
-                "href": "/docs/0.6.0/firebolt/docs/voice-guidance",
+                "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/voice-guidance",
                 "docId": "firebolt/docs/voice-guidance"
               }
             ],
-            "href": "/docs/0.6.0/firebolt/docs/"
+            "href": "/dousarus-demo/docs/0.6.0/firebolt/docs/"
           }
         ],
-        "href": "/docs/0.6.0/category/firebolt"
+        "href": "/dousarus-demo/docs/0.6.0/category/firebolt"
       },
       {
         "type": "link",
         "label": "Firebolt and XVP Showcase",
-        "href": "/docs/0.6.0/intro",
+        "href": "/dousarus-demo/docs/0.6.0/intro",
         "docId": "intro"
       },
       {
@@ -179,13 +179,13 @@
                   {
                     "type": "link",
                     "label": "Accessibility",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/",
                     "docId": "xvp-docs/getting-started/core-concepts/accessibility/index"
                   },
                   {
                     "type": "link",
                     "label": "Content Availability",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/",
                     "docId": "xvp-docs/getting-started/core-concepts/content-availability/index"
                   },
                   {
@@ -197,13 +197,13 @@
                       {
                         "type": "link",
                         "label": "DVR",
-                        "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
+                        "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
                         "docId": "xvp-docs/getting-started/core-concepts/content-catalogs/dvr/index"
                       },
                       {
                         "type": "link",
                         "label": "Linear",
-                        "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
+                        "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
                         "docId": "xvp-docs/getting-started/core-concepts/content-catalogs/linear/index"
                       },
                       {
@@ -215,68 +215,68 @@
                           {
                             "type": "link",
                             "label": "LiVOD",
-                            "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
+                            "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
                             "docId": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index"
                           },
                           {
                             "type": "link",
                             "label": "Locker",
-                            "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+                            "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
                             "docId": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index"
                           }
                         ],
-                        "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/"
+                        "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/"
                       }
                     ],
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/"
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/"
                   },
                   {
                     "type": "link",
                     "label": "Content Entitlements",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-entitlements/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-entitlements/",
                     "docId": "xvp-docs/getting-started/core-concepts/content-entitlements/index"
                   },
                   {
                     "type": "link",
                     "label": "Entities",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
                     "docId": "xvp-docs/getting-started/core-concepts/entities-and-xrns/index"
                   },
                   {
                     "type": "link",
                     "label": "Privacy and Optouts",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
                     "docId": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index"
                   },
                   {
                     "type": "link",
                     "label": "Profiles and Owners",
-                    "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+                    "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/",
                     "docId": "xvp-docs/getting-started/core-concepts/profile-and-owners/index"
                   }
                 ],
-                "href": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/"
+                "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/"
               },
               {
                 "type": "link",
                 "label": "Experience",
-                "href": "/docs/0.6.0/xvp-docs/getting-started/experience/",
+                "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/experience/",
                 "docId": "xvp-docs/getting-started/experience/index"
               },
               {
                 "type": "link",
                 "label": "Identity and Access",
-                "href": "/docs/0.6.0/xvp-docs/getting-started/identity-and-access/",
+                "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/identity-and-access/",
                 "docId": "xvp-docs/getting-started/identity-and-access/index"
               },
               {
                 "type": "link",
                 "label": "Ingest",
-                "href": "/docs/0.6.0/xvp-docs/getting-started/ingest/",
+                "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/ingest/",
                 "docId": "xvp-docs/getting-started/ingest/index"
               }
             ],
-            "href": "/docs/0.6.0/xvp-docs/getting-started/"
+            "href": "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/"
           }
         ]
       }

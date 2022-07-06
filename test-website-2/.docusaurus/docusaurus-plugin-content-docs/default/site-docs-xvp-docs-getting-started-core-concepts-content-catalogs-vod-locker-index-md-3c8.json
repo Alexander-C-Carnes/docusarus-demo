@@ -6,29 +6,29 @@
   "source": "@site/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index.md",
   "sourceDirName": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker",
   "slug": "/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
-  "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+  "permalink": "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/next/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/next/tags/getting-started"
     },
     {
       "label": "Core Concepts",
-      "permalink": "/docs/next/tags/core-concepts"
+      "permalink": "/dousarus-demo/docs/next/tags/core-concepts"
     },
     {
       "label": "Content Catalogs",
-      "permalink": "/docs/next/tags/content-catalogs"
+      "permalink": "/dousarus-demo/docs/next/tags/content-catalogs"
     },
     {
       "label": "VOD",
-      "permalink": "/docs/next/tags/vod"
+      "permalink": "/dousarus-demo/docs/next/tags/vod"
     },
     {
       "label": "Transact",
-      "permalink": "/docs/next/tags/transact"
+      "permalink": "/dousarus-demo/docs/next/tags/transact"
     }
   ],
   "version": "current",
@@ -47,10 +47,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "LiVOD",
-    "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/"
+    "permalink": "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/"
   },
   "next": {
     "title": "Content Entitlements",
-    "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/content-entitlements/"
+    "permalink": "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-entitlements/"
   }
 }

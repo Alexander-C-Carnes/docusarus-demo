@@ -6,7 +6,7 @@
   "source": "@site/versioned_docs/version-0.6.0/firebolt/docs/voice-guidance.md",
   "sourceDirName": "firebolt/docs",
   "slug": "/firebolt/docs/voice-guidance",
-  "permalink": "/docs/0.6.0/firebolt/docs/voice-guidance",
+  "permalink": "/dousarus-demo/docs/0.6.0/firebolt/docs/voice-guidance",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.6.0/firebolt/docs/voice-guidance.md",
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Getting Started",
-    "permalink": "/docs/0.6.0/firebolt/docs/quick-start-guide"
+    "permalink": "/dousarus-demo/docs/0.6.0/firebolt/docs/quick-start-guide"
   },
   "next": {
     "title": "Firebolt and XVP Showcase",
-    "permalink": "/docs/0.6.0/intro"
+    "permalink": "/dousarus-demo/docs/0.6.0/intro"
   }
 }

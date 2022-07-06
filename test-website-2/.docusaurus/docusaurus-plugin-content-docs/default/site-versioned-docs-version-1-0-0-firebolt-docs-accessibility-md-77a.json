@@ -6,17 +6,17 @@
   "source": "@site/versioned_docs/version-1.0.0/firebolt/docs/accessibility.md",
   "sourceDirName": "firebolt/docs",
   "slug": "/firebolt/docs/accessibility",
-  "permalink": "/docs/firebolt/docs/accessibility",
+  "permalink": "/dousarus-demo/docs/firebolt/docs/accessibility",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/firebolt/docs/accessibility.md",
   "tags": [
     {
       "label": "Accessibility",
-      "permalink": "/docs/tags/accessibility"
+      "permalink": "/dousarus-demo/docs/tags/accessibility"
     },
     {
       "label": "Firebolt",
-      "permalink": "/docs/tags/firebolt"
+      "permalink": "/dousarus-demo/docs/tags/firebolt"
     }
   ],
   "version": "1.0.0",
@@ -32,10 +32,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Feature Documentation",
-    "permalink": "/docs/firebolt/docs/"
+    "permalink": "/dousarus-demo/docs/firebolt/docs/"
   },
   "next": {
     "title": "Content Discovery",
-    "permalink": "/docs/firebolt/docs/content-discovery"
+    "permalink": "/dousarus-demo/docs/firebolt/docs/content-discovery"
   }
 }

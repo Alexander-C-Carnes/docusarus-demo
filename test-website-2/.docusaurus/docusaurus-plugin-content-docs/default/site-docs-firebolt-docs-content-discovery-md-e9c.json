@@ -6,21 +6,21 @@
   "source": "@site/docs/firebolt/docs/content-discovery.md",
   "sourceDirName": "firebolt/docs",
   "slug": "/firebolt/docs/content-discovery",
-  "permalink": "/docs/next/firebolt/docs/content-discovery",
+  "permalink": "/dousarus-demo/docs/next/firebolt/docs/content-discovery",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/firebolt/docs/content-discovery.md",
   "tags": [
     {
       "label": "Getting started",
-      "permalink": "/docs/next/tags/getting-started"
+      "permalink": "/dousarus-demo/docs/next/tags/getting-started"
     },
     {
       "label": "Core Concepts",
-      "permalink": "/docs/next/tags/core-concepts"
+      "permalink": "/dousarus-demo/docs/next/tags/core-concepts"
     },
     {
       "label": "Accessibility",
-      "permalink": "/docs/next/tags/accessibility"
+      "permalink": "/dousarus-demo/docs/next/tags/accessibility"
     }
   ],
   "version": "current",
@@ -37,10 +37,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Accessibility",
-    "permalink": "/docs/next/firebolt/docs/accessibility"
+    "permalink": "/dousarus-demo/docs/next/firebolt/docs/accessibility"
   },
   "next": {
     "title": "Deep Linking",
-    "permalink": "/docs/next/firebolt/docs/deep-linking"
+    "permalink": "/dousarus-demo/docs/next/firebolt/docs/deep-linking"
   }
 }

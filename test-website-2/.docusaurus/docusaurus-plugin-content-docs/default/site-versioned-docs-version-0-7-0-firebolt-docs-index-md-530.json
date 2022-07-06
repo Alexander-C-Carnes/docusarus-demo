@@ -6,7 +6,7 @@
   "source": "@site/versioned_docs/version-0.7.0/firebolt/docs/index.md",
   "sourceDirName": "firebolt/docs",
   "slug": "/firebolt/docs/",
-  "permalink": "/docs/0.7.0/firebolt/docs/",
+  "permalink": "/dousarus-demo/docs/0.7.0/firebolt/docs/",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.7.0/firebolt/docs/index.md",
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Firebolt",
-    "permalink": "/docs/0.7.0/category/firebolt"
+    "permalink": "/dousarus-demo/docs/0.7.0/category/firebolt"
   },
   "next": {
     "title": "Accessibility",
-    "permalink": "/docs/0.7.0/firebolt/docs/accessibility"
+    "permalink": "/dousarus-demo/docs/0.7.0/firebolt/docs/accessibility"
   }
 }
