@@ -10,32 +10,40 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Global Reach',
+    Svg: require('@site/static/img/point 1 svg.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Now you can reach millions of potential customers using our platform
+        and global reach. With Firebolt®, your app is powered by RDK technology
+        and the backing of our partners including Comcast, LGI, and Sky.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Write Once, Run Anywhere',
+    Svg: require('@site/static/img/point 2.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      Firebolt® delivers application solutions to fit your unique business needs.
+      Whether it’s a web or Lightning App, native or hybrid,
+      your team is empowered to create one-of-a-kind user experiences
+      for any RDK-enabled device.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Fast and powerful',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      <>  Build apps in a fraction of the time and cost using Firebolt™’s powerful and easy to use platform
+
+- Supports rich media elements
+- Modern WebKit browser engine with full feature set
+- Cross-platform scalable apps
+- Optimized for resource constrained embedded devices
+
+
       </>
     ),
   },
