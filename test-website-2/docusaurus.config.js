@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'XVP and Firebolt Example',
   tagline: 'Showcase the power of a static site generator for our docs',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'acarne222', // Usually your GitHub org/user name.
-  projectName: 'practice-repo', // Usually your repo name.
+  organizationName: 'alexander-c-carnes', // Usually your GitHub org/user name.
+  projectName: 'dousarus-demo', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -85,7 +85,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
               },
             ],
           },
