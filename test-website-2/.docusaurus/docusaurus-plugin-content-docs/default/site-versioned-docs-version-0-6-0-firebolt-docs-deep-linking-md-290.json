@@ -1,0 +1,36 @@
+{
+  "unversionedId": "firebolt/docs/deep-linking",
+  "id": "version-0.6.0/firebolt/docs/deep-linking",
+  "title": "Deep Linking",
+  "description": "Deep linking is how the platform can inform your app of a user's intention to view a specific, indexed piece of content beyond just your home screen.",
+  "source": "@site/versioned_docs/version-0.6.0/firebolt/docs/deep-linking.md",
+  "sourceDirName": "firebolt/docs",
+  "slug": "/firebolt/docs/deep-linking",
+  "permalink": "/docs/0.6.0/firebolt/docs/deep-linking",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.6.0/firebolt/docs/deep-linking.md",
+  "tags": [
+    {
+      "label": "Deep Linking",
+      "permalink": "/docs/0.6.0/tags/deep-linking"
+    }
+  ],
+  "version": "0.6.0",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Deep Linking",
+    "tags": [
+      "Deep Linking"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Content Discovery",
+    "permalink": "/docs/0.6.0/firebolt/docs/content-discovery"
+  },
+  "next": {
+    "title": "Email Prefill",
+    "permalink": "/docs/0.6.0/firebolt/docs/email-prefill"
+  }
+}

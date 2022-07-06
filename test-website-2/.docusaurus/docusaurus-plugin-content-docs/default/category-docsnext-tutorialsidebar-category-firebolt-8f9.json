@@ -1,0 +1,16 @@
+{
+  "title": "Firebolt",
+  "description": "The functional docs of Firebolt.",
+  "slug": "/category/firebolt",
+  "permalink": "/docs/next/category/firebolt",
+  "navigation": {
+    "previous": {
+      "title": "Firebolt and XVP Showcase",
+      "permalink": "/docs/next/intro"
+    },
+    "next": {
+      "title": "Feature Documentation",
+      "permalink": "/docs/next/firebolt/docs/"
+    }
+  }
+}

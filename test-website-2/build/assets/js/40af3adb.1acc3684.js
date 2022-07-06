@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest_website=self.webpackChunktest_website||[]).push([[2612],{6049:e=>{e.exports=JSON.parse('{"title":"Firebolt","description":"The functional docs of Firebolt.","slug":"/category/firebolt","permalink":"/docs/category/firebolt","navigation":{"next":{"title":"Feature Documentation","permalink":"/docs/firebolt/docs/"}}}')}}]);

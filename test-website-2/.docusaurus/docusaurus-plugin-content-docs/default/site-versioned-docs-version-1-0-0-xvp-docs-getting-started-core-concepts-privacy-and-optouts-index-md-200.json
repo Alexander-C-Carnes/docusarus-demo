@@ -1,0 +1,51 @@
+{
+  "unversionedId": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+  "id": "version-1.0.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+  "title": "Privacy and Optouts",
+  "description": "Last updated 06/03/2022",
+  "source": "@site/versioned_docs/version-1.0.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/index.md",
+  "sourceDirName": "xvp-docs/getting-started/core-concepts/privacy-and-optouts",
+  "slug": "/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+  "permalink": "/docs/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/index.md",
+  "tags": [
+    {
+      "label": "Getting started",
+      "permalink": "/docs/tags/getting-started"
+    },
+    {
+      "label": "Core Concepts",
+      "permalink": "/docs/tags/core-concepts"
+    },
+    {
+      "label": "Privacy",
+      "permalink": "/docs/tags/privacy"
+    },
+    {
+      "label": "Optouts",
+      "permalink": "/docs/tags/optouts"
+    }
+  ],
+  "version": "1.0.0",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Privacy and Optouts",
+    "tags": [
+      "Getting started",
+      "Core Concepts",
+      "Privacy",
+      "Optouts"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Entities",
+    "permalink": "/docs/xvp-docs/getting-started/core-concepts/entities-and-xrns/"
+  },
+  "next": {
+    "title": "Profiles and Owners",
+    "permalink": "/docs/xvp-docs/getting-started/core-concepts/profile-and-owners/"
+  }
+}

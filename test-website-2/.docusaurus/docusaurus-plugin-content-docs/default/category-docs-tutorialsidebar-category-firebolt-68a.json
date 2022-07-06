@@ -1,0 +1,12 @@
+{
+  "title": "Firebolt",
+  "description": "The functional docs of Firebolt.",
+  "slug": "/category/firebolt",
+  "permalink": "/docs/category/firebolt",
+  "navigation": {
+    "next": {
+      "title": "Feature Documentation",
+      "permalink": "/docs/firebolt/docs/"
+    }
+  }
+}
