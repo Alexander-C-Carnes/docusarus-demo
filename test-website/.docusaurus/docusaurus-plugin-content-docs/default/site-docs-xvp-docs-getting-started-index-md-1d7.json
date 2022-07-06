@@ -1,0 +1,41 @@
+{
+  "unversionedId": "xvp-docs/getting-started/index",
+  "id": "xvp-docs/getting-started/index",
+  "title": "Home",
+  "description": "Getting your app up and running on Firebolt takes just a few simple steps.",
+  "source": "@site/docs/xvp-docs/getting-started/index.md",
+  "sourceDirName": "xvp-docs/getting-started",
+  "slug": "/xvp-docs/getting-started/",
+  "permalink": "/docs/next/xvp-docs/getting-started/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/xvp-docs/getting-started/index.md",
+  "tags": [
+    {
+      "label": "Getting started",
+      "permalink": "/docs/next/tags/getting-started"
+    },
+    {
+      "label": "Quick Start",
+      "permalink": "/docs/next/tags/quick-start"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Home",
+    "tags": [
+      "Getting started",
+      "Quick Start"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "XVP Docs",
+    "permalink": "/docs/next/category/xvp-docs"
+  },
+  "next": {
+    "title": "Core Concepts",
+    "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/"
+  }
+}

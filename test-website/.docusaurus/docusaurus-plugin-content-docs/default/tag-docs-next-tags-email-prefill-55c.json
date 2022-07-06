@@ -1,0 +1,14 @@
+{
+  "label": "Email Prefill",
+  "permalink": "/docs/next/tags/email-prefill",
+  "allTagsPath": "/docs/next/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "firebolt/docs/email-prefill",
+      "title": "Email Prefill",
+      "description": "Your users have the ability to save email addresses to their account on the platform. The Email Prefill feature enables your app to request an email address from the user without requiring them to type it out using a remote.",
+      "permalink": "/docs/next/firebolt/docs/email-prefill"
+    }
+  ]
+}

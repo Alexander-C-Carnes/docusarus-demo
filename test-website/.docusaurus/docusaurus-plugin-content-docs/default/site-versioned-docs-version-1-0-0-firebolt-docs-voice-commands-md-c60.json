@@ -1,0 +1,28 @@
+{
+  "unversionedId": "firebolt/docs/voice-commands",
+  "id": "version-1.0.0/firebolt/docs/voice-commands",
+  "title": "Voice Commands",
+  "description": "Voice commands allow your users to press a button and speak to their remotes and go directly to an experience they want to find. Our platform includes built-in voice functions which enable your users to launch apps and control media playback. Additionally, there are a wide range of other voice commands that give more flexibility to your users. These require a level of integration if you wish to take advantage of their benefits.",
+  "source": "@site/versioned_docs/version-1.0.0/firebolt/docs/voice-commands.md",
+  "sourceDirName": "firebolt/docs",
+  "slug": "/firebolt/docs/voice-commands",
+  "permalink": "/docs/firebolt/docs/voice-commands",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/firebolt/docs/voice-commands.md",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Voice Commands"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sign in and sign up",
+    "permalink": "/docs/firebolt/docs/sign-in-and-sign-up"
+  },
+  "next": {
+    "title": "Ad Content Standards",
+    "permalink": "/docs/firebolt/docs/ad-content-standards"
+  }
+}

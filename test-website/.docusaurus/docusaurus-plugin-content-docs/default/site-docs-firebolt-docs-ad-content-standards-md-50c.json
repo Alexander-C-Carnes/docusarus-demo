@@ -1,0 +1,26 @@
+{
+  "unversionedId": "firebolt/docs/ad-content-standards",
+  "id": "firebolt/docs/ad-content-standards",
+  "title": "Ad Content Standards",
+  "description": "These Advertising Content Standards and Guidelines (the “Advertising Guidelines”) govern the provision of advertising by you in connection with the delivery of content, product and/or any other service (each, a “Service”) as set forth in the agreement between you and the platform.",
+  "source": "@site/docs/firebolt/docs/ad-content-standards.md",
+  "sourceDirName": "firebolt/docs",
+  "slug": "/firebolt/docs/ad-content-standards",
+  "permalink": "/docs/next/firebolt/docs/ad-content-standards",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/firebolt/docs/ad-content-standards.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Ad Content Standards"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Voice Commands",
+    "permalink": "/docs/next/firebolt/docs/voice-commands"
+  },
+  "next": {
+    "title": "App Rating",
+    "permalink": "/docs/next/firebolt/docs/app-rating-guidelines"
+  }
+}

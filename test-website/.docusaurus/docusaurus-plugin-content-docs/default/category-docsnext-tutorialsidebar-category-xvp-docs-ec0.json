@@ -1,0 +1,16 @@
+{
+  "title": "XVP Docs",
+  "description": "The functional docs of XVP.",
+  "slug": "/category/xvp-docs",
+  "permalink": "/docs/next/category/xvp-docs",
+  "navigation": {
+    "previous": {
+      "title": "Voice Guidance",
+      "permalink": "/docs/next/firebolt/docs/voice-guidance"
+    },
+    "next": {
+      "title": "Home",
+      "permalink": "/docs/next/xvp-docs/getting-started/"
+    }
+  }
+}

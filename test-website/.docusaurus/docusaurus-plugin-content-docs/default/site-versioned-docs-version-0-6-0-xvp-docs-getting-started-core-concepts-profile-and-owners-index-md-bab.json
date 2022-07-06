@@ -1,0 +1,51 @@
+{
+  "unversionedId": "xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+  "id": "version-0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+  "title": "Profiles and Owners",
+  "description": "Last updated 06/03/2022",
+  "source": "@site/versioned_docs/version-0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/index.md",
+  "sourceDirName": "xvp-docs/getting-started/core-concepts/profile-and-owners",
+  "slug": "/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+  "permalink": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/index.md",
+  "tags": [
+    {
+      "label": "Getting started",
+      "permalink": "/docs/0.6.0/tags/getting-started"
+    },
+    {
+      "label": "Core Concepts",
+      "permalink": "/docs/0.6.0/tags/core-concepts"
+    },
+    {
+      "label": "Profiles",
+      "permalink": "/docs/0.6.0/tags/profiles"
+    },
+    {
+      "label": "Owners",
+      "permalink": "/docs/0.6.0/tags/owners"
+    }
+  ],
+  "version": "0.6.0",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Profiles and Owners",
+    "tags": [
+      "Getting started",
+      "Core Concepts",
+      "Profiles",
+      "Owners"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Privacy and Optouts",
+    "permalink": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/"
+  },
+  "next": {
+    "title": "Experience",
+    "permalink": "/docs/0.6.0/xvp-docs/getting-started/experience/"
+  }
+}
