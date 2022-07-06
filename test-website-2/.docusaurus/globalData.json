@@ -1,0 +1,977 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": false,
+          "path": "/docs/next",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "firebolt/docs/accessibility",
+              "path": "/docs/next/firebolt/docs/accessibility",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/ad-content-standards",
+              "path": "/docs/next/firebolt/docs/ad-content-standards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-rating-guidelines",
+              "path": "/docs/next/firebolt/docs/app-rating-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-requirements",
+              "path": "/docs/next/firebolt/docs/app-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/closed-captions",
+              "path": "/docs/next/firebolt/docs/closed-captions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-discovery",
+              "path": "/docs/next/firebolt/docs/content-discovery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-service-guidelines",
+              "path": "/docs/next/firebolt/docs/content-service-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/deep-linking",
+              "path": "/docs/next/firebolt/docs/deep-linking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/email-prefill",
+              "path": "/docs/next/firebolt/docs/email-prefill",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/index",
+              "path": "/docs/next/firebolt/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/lifecycle-management",
+              "path": "/docs/next/firebolt/docs/lifecycle-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-events",
+              "path": "/docs/next/firebolt/docs/listening-for-events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-property-changes",
+              "path": "/docs/next/firebolt/docs/listening-for-property-changes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/localization",
+              "path": "/docs/next/firebolt/docs/localization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/metadata-integration",
+              "path": "/docs/next/firebolt/docs/metadata-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/open-gmrss-format",
+              "path": "/docs/next/firebolt/docs/open-gmrss-format",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/parental-controls",
+              "path": "/docs/next/firebolt/docs/parental-controls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/profile-flags",
+              "path": "/docs/next/firebolt/docs/profile-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/quick-start-guide",
+              "path": "/docs/next/firebolt/docs/quick-start-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/remote-specifications",
+              "path": "/docs/next/firebolt/docs/remote-specifications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/sign-in-and-sign-up",
+              "path": "/docs/next/firebolt/docs/sign-in-and-sign-up",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-commands",
+              "path": "/docs/next/firebolt/docs/voice-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-guidance",
+              "path": "/docs/next/firebolt/docs/voice-guidance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/next/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/accessibility/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/accessibility/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-availability/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-availability/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/dvr/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/linear/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-entitlements/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/content-entitlements/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/entities-and-xrns/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+              "path": "/docs/next/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/experience/index",
+              "path": "/docs/next/xvp-docs/getting-started/experience/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/identity-and-access/index",
+              "path": "/docs/next/xvp-docs/getting-started/identity-and-access/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/index",
+              "path": "/docs/next/xvp-docs/getting-started/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/ingest/index",
+              "path": "/docs/next/xvp-docs/getting-started/ingest/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/firebolt",
+              "path": "/docs/next/category/firebolt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/xvp-docs",
+              "path": "/docs/next/category/xvp-docs",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/next/intro",
+                "label": "intro"
+              }
+            }
+          }
+        },
+        {
+          "name": "1.0.0",
+          "label": "1.0.0",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "firebolt/docs/index",
+          "docs": [
+            {
+              "id": "firebolt/docs/accessibility",
+              "path": "/docs/firebolt/docs/accessibility",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/ad-content-standards",
+              "path": "/docs/firebolt/docs/ad-content-standards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-rating-guidelines",
+              "path": "/docs/firebolt/docs/app-rating-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-requirements",
+              "path": "/docs/firebolt/docs/app-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/closed-captions",
+              "path": "/docs/firebolt/docs/closed-captions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-discovery",
+              "path": "/docs/firebolt/docs/content-discovery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-service-guidelines",
+              "path": "/docs/firebolt/docs/content-service-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/deep-linking",
+              "path": "/docs/firebolt/docs/deep-linking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/email-prefill",
+              "path": "/docs/firebolt/docs/email-prefill",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/index",
+              "path": "/docs/firebolt/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/lifecycle-management",
+              "path": "/docs/firebolt/docs/lifecycle-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-events",
+              "path": "/docs/firebolt/docs/listening-for-events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-property-changes",
+              "path": "/docs/firebolt/docs/listening-for-property-changes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/localization",
+              "path": "/docs/firebolt/docs/localization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/metadata-integration",
+              "path": "/docs/firebolt/docs/metadata-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/open-gmrss-format",
+              "path": "/docs/firebolt/docs/open-gmrss-format",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/parental-controls",
+              "path": "/docs/firebolt/docs/parental-controls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/profile-flags",
+              "path": "/docs/firebolt/docs/profile-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/quick-start-guide",
+              "path": "/docs/firebolt/docs/quick-start-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/remote-specifications",
+              "path": "/docs/firebolt/docs/remote-specifications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/sign-in-and-sign-up",
+              "path": "/docs/firebolt/docs/sign-in-and-sign-up",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-commands",
+              "path": "/docs/firebolt/docs/voice-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-guidance",
+              "path": "/docs/firebolt/docs/voice-guidance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/accessibility/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/accessibility/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-availability/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-availability/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/dvr/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/linear/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-entitlements/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/content-entitlements/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/entities-and-xrns/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+              "path": "/docs/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/experience/index",
+              "path": "/docs/xvp-docs/getting-started/experience/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/identity-and-access/index",
+              "path": "/docs/xvp-docs/getting-started/identity-and-access/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/index",
+              "path": "/docs/xvp-docs/getting-started/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/ingest/index",
+              "path": "/docs/xvp-docs/getting-started/ingest/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/firebolt",
+              "path": "/docs/category/firebolt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/xvp-docs",
+              "path": "/docs/category/xvp-docs",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/firebolt",
+                "label": "Firebolt"
+              }
+            }
+          }
+        },
+        {
+          "name": "0.7.0",
+          "label": "0.7.0",
+          "isLast": false,
+          "path": "/docs/0.7.0",
+          "mainDocId": "firebolt/docs/index",
+          "docs": [
+            {
+              "id": "firebolt/docs/accessibility",
+              "path": "/docs/0.7.0/firebolt/docs/accessibility",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/ad-content-standards",
+              "path": "/docs/0.7.0/firebolt/docs/ad-content-standards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-rating-guidelines",
+              "path": "/docs/0.7.0/firebolt/docs/app-rating-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-requirements",
+              "path": "/docs/0.7.0/firebolt/docs/app-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/closed-captions",
+              "path": "/docs/0.7.0/firebolt/docs/closed-captions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-discovery",
+              "path": "/docs/0.7.0/firebolt/docs/content-discovery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-service-guidelines",
+              "path": "/docs/0.7.0/firebolt/docs/content-service-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/deep-linking",
+              "path": "/docs/0.7.0/firebolt/docs/deep-linking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/email-prefill",
+              "path": "/docs/0.7.0/firebolt/docs/email-prefill",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/index",
+              "path": "/docs/0.7.0/firebolt/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/lifecycle-management",
+              "path": "/docs/0.7.0/firebolt/docs/lifecycle-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-events",
+              "path": "/docs/0.7.0/firebolt/docs/listening-for-events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-property-changes",
+              "path": "/docs/0.7.0/firebolt/docs/listening-for-property-changes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/localization",
+              "path": "/docs/0.7.0/firebolt/docs/localization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/metadata-integration",
+              "path": "/docs/0.7.0/firebolt/docs/metadata-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/open-gmrss-format",
+              "path": "/docs/0.7.0/firebolt/docs/open-gmrss-format",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/parental-controls",
+              "path": "/docs/0.7.0/firebolt/docs/parental-controls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/profile-flags",
+              "path": "/docs/0.7.0/firebolt/docs/profile-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/quick-start-guide",
+              "path": "/docs/0.7.0/firebolt/docs/quick-start-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/remote-specifications",
+              "path": "/docs/0.7.0/firebolt/docs/remote-specifications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/sign-in-and-sign-up",
+              "path": "/docs/0.7.0/firebolt/docs/sign-in-and-sign-up",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-commands",
+              "path": "/docs/0.7.0/firebolt/docs/voice-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-guidance",
+              "path": "/docs/0.7.0/firebolt/docs/voice-guidance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/0.7.0/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/0.7.0/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/0.7.0/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/0.7.0/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/0.7.0/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/0.7.0/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/0.7.0/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/0.7.0/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/0.7.0/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/accessibility/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/accessibility/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-availability/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-availability/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/dvr/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/linear/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-entitlements/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-entitlements/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/entities-and-xrns/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/experience/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/experience/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/identity-and-access/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/identity-and-access/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/ingest/index",
+              "path": "/docs/0.7.0/xvp-docs/getting-started/ingest/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/firebolt",
+              "path": "/docs/0.7.0/category/firebolt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/docs/0.7.0/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/0.7.0/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/0.7.0/category/firebolt",
+                "label": "Firebolt"
+              }
+            }
+          }
+        },
+        {
+          "name": "0.6.0",
+          "label": "0.6.0",
+          "isLast": false,
+          "path": "/docs/0.6.0",
+          "mainDocId": "firebolt/docs/index",
+          "docs": [
+            {
+              "id": "firebolt/docs/accessibility",
+              "path": "/docs/0.6.0/firebolt/docs/accessibility",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/ad-content-standards",
+              "path": "/docs/0.6.0/firebolt/docs/ad-content-standards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-rating-guidelines",
+              "path": "/docs/0.6.0/firebolt/docs/app-rating-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/app-requirements",
+              "path": "/docs/0.6.0/firebolt/docs/app-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/closed-captions",
+              "path": "/docs/0.6.0/firebolt/docs/closed-captions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-discovery",
+              "path": "/docs/0.6.0/firebolt/docs/content-discovery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/content-service-guidelines",
+              "path": "/docs/0.6.0/firebolt/docs/content-service-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/deep-linking",
+              "path": "/docs/0.6.0/firebolt/docs/deep-linking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/email-prefill",
+              "path": "/docs/0.6.0/firebolt/docs/email-prefill",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/index",
+              "path": "/docs/0.6.0/firebolt/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/lifecycle-management",
+              "path": "/docs/0.6.0/firebolt/docs/lifecycle-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/listening-for-events",
+              "path": "/docs/0.6.0/firebolt/docs/listening-for-events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/localization",
+              "path": "/docs/0.6.0/firebolt/docs/localization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/metadata-integration",
+              "path": "/docs/0.6.0/firebolt/docs/metadata-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/open-gmrss-format",
+              "path": "/docs/0.6.0/firebolt/docs/open-gmrss-format",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/parental-controls",
+              "path": "/docs/0.6.0/firebolt/docs/parental-controls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/profile-flags",
+              "path": "/docs/0.6.0/firebolt/docs/profile-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/quick-start-guide",
+              "path": "/docs/0.6.0/firebolt/docs/quick-start-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/remote-specifications",
+              "path": "/docs/0.6.0/firebolt/docs/remote-specifications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/sign-in-and-sign-up",
+              "path": "/docs/0.6.0/firebolt/docs/sign-in-and-sign-up",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-commands",
+              "path": "/docs/0.6.0/firebolt/docs/voice-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "firebolt/docs/voice-guidance",
+              "path": "/docs/0.6.0/firebolt/docs/voice-guidance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/0.6.0/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/accessibility/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-availability/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/dvr/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/linear/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/content-entitlements/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-entitlements/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/entities-and-xrns/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/privacy-and-optouts/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/core-concepts/profile-and-owners/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/experience/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/experience/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/identity-and-access/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/identity-and-access/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xvp-docs/getting-started/ingest/index",
+              "path": "/docs/0.6.0/xvp-docs/getting-started/ingest/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/firebolt",
+              "path": "/docs/0.6.0/category/firebolt",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/0.6.0/category/firebolt",
+                "label": "Firebolt"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

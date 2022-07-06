@@ -1,0 +1,20 @@
+{
+  "label": "VOD",
+  "permalink": "/docs/next/tags/vod",
+  "allTagsPath": "/docs/next/tags",
+  "count": 2,
+  "items": [
+    {
+      "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/index",
+      "title": "LiVOD",
+      "description": "| Status        | DRAFT          |",
+      "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/"
+    },
+    {
+      "id": "xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/index",
+      "title": "Locker",
+      "description": "",
+      "permalink": "/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/"
+    }
+  ]
+}

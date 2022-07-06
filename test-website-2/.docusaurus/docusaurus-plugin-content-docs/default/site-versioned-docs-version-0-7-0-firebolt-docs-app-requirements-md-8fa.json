@@ -1,0 +1,26 @@
+{
+  "unversionedId": "firebolt/docs/app-requirements",
+  "id": "version-0.7.0/firebolt/docs/app-requirements",
+  "title": "App Requirements",
+  "description": "Below is a list of various app requirements which must be met. These requirements allow you to deliver the best app experience possible while also providing us with key information to ensure the quality your users expect is being met.",
+  "source": "@site/versioned_docs/version-0.7.0/firebolt/docs/app-requirements.md",
+  "sourceDirName": "firebolt/docs",
+  "slug": "/firebolt/docs/app-requirements",
+  "permalink": "/docs/0.7.0/firebolt/docs/app-requirements",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-0.7.0/firebolt/docs/app-requirements.md",
+  "tags": [],
+  "version": "0.7.0",
+  "frontMatter": {
+    "title": "App Requirements"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App Rating",
+    "permalink": "/docs/0.7.0/firebolt/docs/app-rating-guidelines"
+  },
+  "next": {
+    "title": "Closed Captions",
+    "permalink": "/docs/0.7.0/firebolt/docs/closed-captions"
+  }
+}
