@@ -1,0 +1,8 @@
+{
+  "label": "Firebolt",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "The functional docs of Firebolt."
+  }
+}
