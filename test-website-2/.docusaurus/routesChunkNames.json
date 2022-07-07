@@ -1,1548 +1,1598 @@
 {
-  "/dousarus-demo/blog-e06": {
-    "__comp": "a6aa9e1f",
+  "/dousarus-demo/__docusaurus/debug-3dc": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/__docusaurus/debug/config-c1c": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/__docusaurus/debug/content-b01": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
     },
-    "sidebar": "814f3328",
+    "allContent": "allContent---dousarus-demo-docusaurus-debug-content-246-070"
+  },
+  "/dousarus-demo/__docusaurus/debug/globalData-f09": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/__docusaurus/debug/metadata-c1a": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/__docusaurus/debug/registry-bba": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/__docusaurus/debug/routes-fbe": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-docusaurus-debuga-3-e-257"
+    }
+  },
+  "/dousarus-demo/blog-e06": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
+    },
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
     "items": [
       {
-        "content": "7661071f"
+        "content": "content---dousarus-demo-blog-766-590"
       },
       {
-        "content": "f4f34a3a"
+        "content": "content---dousarus-demo-blogf-4-f-d23"
       },
       {
-        "content": "8717b14a"
+        "content": "content---dousarus-demo-blog-871-261"
       },
       {
-        "content": "925b3f96"
+        "content": "content---dousarus-demo-blog-925-882"
       }
     ],
-    "metadata": "6b859d47"
+    "metadata": "metadata---dousarus-demo-blog-6-b-8-bf6"
   },
   "/dousarus-demo/blog/archive-74f": {
-    "__comp": "9e4087bc",
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "archive": "f8a7334d"
+    "archive": "archive---dousarus-demo-blog-archivef-8-a-791"
   },
   "/dousarus-demo/blog/first-blog-post-a84": {
-    "__comp": "ccc49370",
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
-    "content": "e273c56f"
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
+    "content": "content---dousarus-demo-blog-first-blog-poste-27-4af"
   },
   "/dousarus-demo/blog/long-blog-post-ac6": {
-    "__comp": "ccc49370",
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
-    "content": "73664a40"
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
+    "content": "content---dousarus-demo-blog-long-blog-post-736-11f"
   },
   "/dousarus-demo/blog/mdx-blog-post-e42": {
-    "__comp": "ccc49370",
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
-    "content": "59362658"
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
+    "content": "content---dousarus-demo-blog-mdx-blog-post-593-cd6"
   },
   "/dousarus-demo/blog/tags-9b6": {
-    "__comp": "01a85c17",
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
-    "tags": "55e816e4"
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
+    "tags": "tags---dousarus-demo-blog-tags-55-e-de7"
   },
   "/dousarus-demo/blog/tags/docusaurus-bb6": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
     "items": [
       {
-        "content": "7661071f"
+        "content": "content---dousarus-demo-blog-766-590"
       },
       {
-        "content": "f4f34a3a"
+        "content": "content---dousarus-demo-blogf-4-f-d23"
       },
       {
-        "content": "8717b14a"
+        "content": "content---dousarus-demo-blog-871-261"
       },
       {
-        "content": "925b3f96"
+        "content": "content---dousarus-demo-blog-925-882"
       }
     ],
-    "tag": "7da253e9",
-    "listMetadata": "90a22994"
+    "tag": "tag---dousarus-demo-blog-tags-docusaurus-7-da-9a1",
+    "listMetadata": "listMetadata---dousarus-demo-blog-tags-docusaurus-90-a-1d4"
   },
   "/dousarus-demo/blog/tags/facebook-3f4": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
     "items": [
       {
-        "content": "7661071f"
+        "content": "content---dousarus-demo-blog-766-590"
       }
     ],
-    "tag": "9a189531",
-    "listMetadata": "c5bd96f3"
+    "tag": "tag---dousarus-demo-blog-tags-facebook-9-a-1-139",
+    "listMetadata": "listMetadata---dousarus-demo-blog-tags-facebookc-5-b-5cb"
   },
   "/dousarus-demo/blog/tags/hello-5ae": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
     "items": [
       {
-        "content": "7661071f"
+        "content": "content---dousarus-demo-blog-766-590"
       },
       {
-        "content": "8717b14a"
+        "content": "content---dousarus-demo-blog-871-261"
       }
     ],
-    "tag": "8904ce97",
-    "listMetadata": "54674bd4"
+    "tag": "tag---dousarus-demo-blog-tags-hello-890-427",
+    "listMetadata": "listMetadata---dousarus-demo-blog-tags-hello-546-ed2"
   },
   "/dousarus-demo/blog/tags/hola-9c7": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
     "items": [
       {
-        "content": "925b3f96"
+        "content": "content---dousarus-demo-blog-925-882"
       }
     ],
-    "tag": "326a6747",
-    "listMetadata": "d6493966"
+    "tag": "tag---dousarus-demo-blog-tags-hola-326-f42",
+    "listMetadata": "listMetadata---dousarus-demo-blog-tags-holad-64-12c"
   },
   "/dousarus-demo/blog/welcome-19d": {
-    "__comp": "ccc49370",
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "b1d563ad"
+      "plugin": "plugin---dousarus-demo-blogb-1-d-46a"
     },
-    "sidebar": "814f3328",
-    "content": "d9f32620"
+    "sidebar": "sidebar---dousarus-demo-blog-814-da9",
+    "content": "content---dousarus-demo-blog-welcomed-9-f-b05"
   },
   "/dousarus-demo/docs/0.6.0/tags-1e8": {
-    "__comp": "3720c009",
+    "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tags": "fb01928f"
+    "tags": "tags---dousarus-demo-docs-0-6-0-tagsfb-0-546"
   },
   "/dousarus-demo/docs/0.6.0/tags/accessibility-5e9": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f3e98a09"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-accessibilityf-3-e-1fa"
   },
   "/dousarus-demo/docs/0.6.0/tags/content-availability-5f8": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1a82efb3"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-content-availability-1-a-8-509"
   },
   "/dousarus-demo/docs/0.6.0/tags/content-catalogs-f7b": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "5f215758"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-content-catalogs-5-f-2-1e1"
   },
   "/dousarus-demo/docs/0.6.0/tags/content-entitlement-e94": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f9886282"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-content-entitlementf-98-6d6"
   },
   "/dousarus-demo/docs/0.6.0/tags/core-concepts-69b": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "6127b1dd"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-core-concepts-612-e1b"
   },
   "/dousarus-demo/docs/0.6.0/tags/deep-linking-e02": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f886960b"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-deep-linkingf-88-c9c"
   },
   "/dousarus-demo/docs/0.6.0/tags/dvr-587": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "522aae4b"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-dvr-522-8f0"
   },
   "/dousarus-demo/docs/0.6.0/tags/email-prefill-556": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "ea98a226"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-email-prefillea-9-71c"
   },
   "/dousarus-demo/docs/0.6.0/tags/entities-d5c": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "6b8435da"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-entities-6-b-8-c1e"
   },
   "/dousarus-demo/docs/0.6.0/tags/experience-fef": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "c1f1b0ee"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-experiencec-1-f-eb5"
   },
   "/dousarus-demo/docs/0.6.0/tags/firebolt-ccb": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "c98d3557"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-fireboltc-98-6a0"
   },
   "/dousarus-demo/docs/0.6.0/tags/getting-started-fd4": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "30270bbf"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-getting-started-302-46b"
   },
   "/dousarus-demo/docs/0.6.0/tags/identity-and-access-7e8": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "074ebea7"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-identity-and-access-074-dfc"
   },
   "/dousarus-demo/docs/0.6.0/tags/ingest-db6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "baa5dc3e"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-ingestbaa-3c9"
   },
   "/dousarus-demo/docs/0.6.0/tags/linear-93b": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "ff868776"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-linearff-8-790"
   },
   "/dousarus-demo/docs/0.6.0/tags/optouts-f78": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f542aed1"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-optoutsf-54-c82"
   },
   "/dousarus-demo/docs/0.6.0/tags/owners-a9e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1a24a78e"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-owners-1-a-2-779"
   },
   "/dousarus-demo/docs/0.6.0/tags/privacy-323": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "cdb97239"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-privacycdb-335"
   },
   "/dousarus-demo/docs/0.6.0/tags/profiles-54e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "20f5b38f"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-profiles-20-f-2a6"
   },
   "/dousarus-demo/docs/0.6.0/tags/quick-start-f60": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "84027a5d"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-quick-start-840-a36"
   },
   "/dousarus-demo/docs/0.6.0/tags/transact-c56": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "5bf943d3"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-transact-5-bf-1cb"
   },
   "/dousarus-demo/docs/0.6.0/tags/vod-59f": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "4cb7f564"
+    "tag": "tag---dousarus-demo-docs-0-6-0-tags-vod-4-cb-a50"
   },
   "/dousarus-demo/docs/0.7.0/tags-1d2": {
-    "__comp": "3720c009",
+    "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tags": "faefd817"
+    "tags": "tags---dousarus-demo-docs-0-7-0-tagsfae-54f"
   },
   "/dousarus-demo/docs/0.7.0/tags/accessibility-a9e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "52db8970"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-accessibility-52-d-1a0"
   },
   "/dousarus-demo/docs/0.7.0/tags/content-availability-eb6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "714fa7f9"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-content-availability-714-537"
   },
   "/dousarus-demo/docs/0.7.0/tags/content-catalogs-91e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "59a9669c"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-content-catalogs-59-a-232"
   },
   "/dousarus-demo/docs/0.7.0/tags/content-entitlement-234": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "e7121434"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-content-entitlemente-71-ff5"
   },
   "/dousarus-demo/docs/0.7.0/tags/core-concepts-e2e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "af76b686"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-core-conceptsaf-7-b0e"
   },
   "/dousarus-demo/docs/0.7.0/tags/deep-linking-6e6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "7c01970c"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-deep-linking-7-c-0-703"
   },
   "/dousarus-demo/docs/0.7.0/tags/dvr-661": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "27e0df66"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-dvr-27-e-640"
   },
   "/dousarus-demo/docs/0.7.0/tags/email-prefill-c3b": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "e873815b"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-email-prefille-87-4ec"
   },
   "/dousarus-demo/docs/0.7.0/tags/entities-8a7": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "0deee571"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-entities-0-de-dbc"
   },
   "/dousarus-demo/docs/0.7.0/tags/experience-795": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "9bb4143a"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-experience-9-bb-656"
   },
   "/dousarus-demo/docs/0.7.0/tags/firebolt-3f6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "39a3ac29"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-firebolt-39-a-e5f"
   },
   "/dousarus-demo/docs/0.7.0/tags/getting-started-8dc": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "fe76ff7a"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-getting-startedfe-7-056"
   },
   "/dousarus-demo/docs/0.7.0/tags/identity-and-access-925": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "bf90d826"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-identity-and-accessbf-9-837"
   },
   "/dousarus-demo/docs/0.7.0/tags/ingest-838": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "81f487b2"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-ingest-81-f-33c"
   },
   "/dousarus-demo/docs/0.7.0/tags/linear-df7": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f18050d2"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-linearf-18-bd3"
   },
   "/dousarus-demo/docs/0.7.0/tags/optouts-4e6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "b341ac19"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-optoutsb-34-fce"
   },
   "/dousarus-demo/docs/0.7.0/tags/owners-3d8": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "ba5687cc"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-ownersba-5-bbd"
   },
   "/dousarus-demo/docs/0.7.0/tags/privacy-56b": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "94c061da"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-privacy-94-c-b40"
   },
   "/dousarus-demo/docs/0.7.0/tags/profiles-189": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "65cba338"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-profiles-65-c-aa8"
   },
   "/dousarus-demo/docs/0.7.0/tags/quick-start-292": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "a1b94943"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-quick-starta-1-b-b6a"
   },
   "/dousarus-demo/docs/0.7.0/tags/transact-457": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1434e2b6"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-transact-143-bf3"
   },
   "/dousarus-demo/docs/0.7.0/tags/vod-099": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "070976ab"
+    "tag": "tag---dousarus-demo-docs-0-7-0-tags-vod-070-68e"
   },
   "/dousarus-demo/docs/next/tags-2e7": {
-    "__comp": "3720c009",
+    "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tags": "55960ee5"
+    "tags": "tags---dousarus-demo-docs-next-tags-559-2a0"
   },
   "/dousarus-demo/docs/next/tags/accessibility-2ca": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "66ef3413"
+    "tag": "tag---dousarus-demo-docs-next-tags-accessibility-66-e-94d"
   },
   "/dousarus-demo/docs/next/tags/content-availability-8e4": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1b07063e"
+    "tag": "tag---dousarus-demo-docs-next-tags-content-availability-1-b-0-272"
   },
   "/dousarus-demo/docs/next/tags/content-catalogs-a77": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "e8c151f3"
+    "tag": "tag---dousarus-demo-docs-next-tags-content-catalogse-8-c-061"
   },
   "/dousarus-demo/docs/next/tags/content-entitlement-055": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "174a8907"
+    "tag": "tag---dousarus-demo-docs-next-tags-content-entitlement-174-1f9"
   },
   "/dousarus-demo/docs/next/tags/core-concepts-fb7": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "b60d5ee0"
+    "tag": "tag---dousarus-demo-docs-next-tags-core-conceptsb-60-cc3"
   },
   "/dousarus-demo/docs/next/tags/deep-linking-609": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1f66c9aa"
+    "tag": "tag---dousarus-demo-docs-next-tags-deep-linking-1-f-6-5e3"
   },
   "/dousarus-demo/docs/next/tags/dvr-842": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "4f5d9bf1"
+    "tag": "tag---dousarus-demo-docs-next-tags-dvr-4-f-5-439"
   },
   "/dousarus-demo/docs/next/tags/email-prefill-df4": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "62fa0e0c"
+    "tag": "tag---dousarus-demo-docs-next-tags-email-prefill-62-f-f7d"
   },
   "/dousarus-demo/docs/next/tags/entities-cf0": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "531ddd06"
+    "tag": "tag---dousarus-demo-docs-next-tags-entities-531-f53"
   },
   "/dousarus-demo/docs/next/tags/experience-cb6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "bcd59ee5"
+    "tag": "tag---dousarus-demo-docs-next-tags-experiencebcd-8e5"
   },
   "/dousarus-demo/docs/next/tags/firebolt-490": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "685de82c"
+    "tag": "tag---dousarus-demo-docs-next-tags-firebolt-685-e3a"
   },
   "/dousarus-demo/docs/next/tags/getting-started-960": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "c13c0613"
+    "tag": "tag---dousarus-demo-docs-next-tags-getting-startedc-13-915"
   },
   "/dousarus-demo/docs/next/tags/identity-and-access-695": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "064e30f1"
+    "tag": "tag---dousarus-demo-docs-next-tags-identity-and-access-064-3be"
   },
   "/dousarus-demo/docs/next/tags/ingest-bdc": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "d6b4a059"
+    "tag": "tag---dousarus-demo-docs-next-tags-ingestd-6-b-816"
   },
   "/dousarus-demo/docs/next/tags/linear-75e": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "417ab788"
+    "tag": "tag---dousarus-demo-docs-next-tags-linear-417-3d5"
   },
   "/dousarus-demo/docs/next/tags/optouts-8e8": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1fccad61"
+    "tag": "tag---dousarus-demo-docs-next-tags-optouts-1-fc-d75"
   },
   "/dousarus-demo/docs/next/tags/owners-c08": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "bfbe2fdf"
+    "tag": "tag---dousarus-demo-docs-next-tags-ownersbfb-42d"
   },
   "/dousarus-demo/docs/next/tags/privacy-4a1": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "b68c917e"
+    "tag": "tag---dousarus-demo-docs-next-tags-privacyb-68-5b9"
   },
   "/dousarus-demo/docs/next/tags/profiles-f98": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "67a6e66e"
+    "tag": "tag---dousarus-demo-docs-next-tags-profiles-67-a-0a4"
   },
   "/dousarus-demo/docs/next/tags/quick-start-a25": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "61fc4085"
+    "tag": "tag---dousarus-demo-docs-next-tags-quick-start-61-f-d70"
   },
   "/dousarus-demo/docs/next/tags/transact-696": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "c9a17f3b"
+    "tag": "tag---dousarus-demo-docs-next-tags-transactc-9-a-ced"
   },
   "/dousarus-demo/docs/next/tags/vod-7df": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "d1d69205"
+    "tag": "tag---dousarus-demo-docs-next-tags-vodd-1-d-020"
   },
   "/dousarus-demo/docs/tags-df3": {
-    "__comp": "3720c009",
+    "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tags": "7806360e"
+    "tags": "tags---dousarus-demo-docs-tags-780-e72"
   },
   "/dousarus-demo/docs/tags/accessibility-62d": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "ab32aa68"
+    "tag": "tag---dousarus-demo-docs-tags-accessibilityab-3-82e"
   },
   "/dousarus-demo/docs/tags/content-availability-2a0": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "93a64e67"
+    "tag": "tag---dousarus-demo-docs-tags-content-availability-93-a-cc0"
   },
   "/dousarus-demo/docs/tags/content-catalogs-a27": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1427dd39"
+    "tag": "tag---dousarus-demo-docs-tags-content-catalogs-142-582"
   },
   "/dousarus-demo/docs/tags/content-entitlement-eb1": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "971797be"
+    "tag": "tag---dousarus-demo-docs-tags-content-entitlement-971-a98"
   },
   "/dousarus-demo/docs/tags/core-concepts-8f4": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "1fe3baae"
+    "tag": "tag---dousarus-demo-docs-tags-core-concepts-1-fe-e36"
   },
   "/dousarus-demo/docs/tags/deep-linking-9eb": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "338de212"
+    "tag": "tag---dousarus-demo-docs-tags-deep-linking-338-0ec"
   },
   "/dousarus-demo/docs/tags/dvr-8b0": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "62128438"
+    "tag": "tag---dousarus-demo-docs-tags-dvr-621-0b1"
   },
   "/dousarus-demo/docs/tags/email-prefill-0cf": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "a971f555"
+    "tag": "tag---dousarus-demo-docs-tags-email-prefilla-97-471"
   },
   "/dousarus-demo/docs/tags/entities-5bd": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "a74f230e"
+    "tag": "tag---dousarus-demo-docs-tags-entitiesa-74-b07"
   },
   "/dousarus-demo/docs/tags/experience-fe9": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "d81b8f40"
+    "tag": "tag---dousarus-demo-docs-tags-experienced-81-257"
   },
   "/dousarus-demo/docs/tags/firebolt-149": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "755cf461"
+    "tag": "tag---dousarus-demo-docs-tags-firebolt-755-8e6"
   },
   "/dousarus-demo/docs/tags/getting-started-e23": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "34159b19"
+    "tag": "tag---dousarus-demo-docs-tags-getting-started-341-345"
   },
   "/dousarus-demo/docs/tags/identity-and-access-7cb": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "bc3b50dd"
+    "tag": "tag---dousarus-demo-docs-tags-identity-and-accessbc-3-5b8"
   },
   "/dousarus-demo/docs/tags/ingest-4fe": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "f3e10074"
+    "tag": "tag---dousarus-demo-docs-tags-ingestf-3-e-e60"
   },
   "/dousarus-demo/docs/tags/linear-2c6": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "0c146ca9"
+    "tag": "tag---dousarus-demo-docs-tags-linear-0-c-1-051"
   },
   "/dousarus-demo/docs/tags/optouts-540": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "161b760c"
+    "tag": "tag---dousarus-demo-docs-tags-optouts-161-48f"
   },
   "/dousarus-demo/docs/tags/owners-170": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "d440ae7e"
+    "tag": "tag---dousarus-demo-docs-tags-ownersd-44-464"
   },
   "/dousarus-demo/docs/tags/privacy-ccd": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "71ef7559"
+    "tag": "tag---dousarus-demo-docs-tags-privacy-71-e-dcc"
   },
   "/dousarus-demo/docs/tags/profiles-797": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "39d5c940"
+    "tag": "tag---dousarus-demo-docs-tags-profiles-39-d-672"
   },
   "/dousarus-demo/docs/tags/quick-start-69c": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "0368f90d"
+    "tag": "tag---dousarus-demo-docs-tags-quick-start-036-f87"
   },
   "/dousarus-demo/docs/tags/transact-4cf": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "43616eb4"
+    "tag": "tag---dousarus-demo-docs-tags-transact-436-f5e"
   },
   "/dousarus-demo/docs/tags/vod-137": {
-    "__comp": "df203c0f",
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "tag": "021810b2"
+    "tag": "tag---dousarus-demo-docs-tags-vod-021-4b2"
   },
   "/dousarus-demo/helloReact-231": {
-    "__comp": "06f8edbc",
+    "__comp": "__comp---site-src-pages-hello-react-js-06-f-dd2",
     "__context": {
-      "plugin": "702e9290"
+      "plugin": "plugin---dousarus-demo-hello-react-702-6c1"
     },
-    "config": "5e9f5e1a"
+    "config": "config---dousarus-demo-hello-react-5-e-9-903"
+  },
+  "/dousarus-demo/index_dep-77f": {
+    "__comp": "__comp---site-src-pages-index-dep-tsx-17-b-5b8",
+    "__context": {
+      "plugin": "plugin---dousarus-demo-hello-react-702-6c1"
+    },
+    "config": "config---dousarus-demo-hello-react-5-e-9-903"
   },
   "/dousarus-demo/markdown-page-892": {
-    "__comp": "1f391b9e",
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "702e9290"
+      "plugin": "plugin---dousarus-demo-hello-react-702-6c1"
     },
-    "content": "393be207"
+    "content": "content---dousarus-demo-markdown-page-393-8de"
   },
   "/dousarus-demo/docs/0.6.0-3bc": {
-    "__comp": "1be78505",
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "versionMetadata": "58f10d9f"
+    "versionMetadata": "versionMetadata---dousarus-demo-docs-0-6-058-f-06c"
   },
   "/dousarus-demo/docs/0.6.0/category/firebolt-9ba": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "dc538698"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-0-6-0-category-fireboltdc-5-d5b"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/-d98": {
-    "__comp": "17896441",
-    "content": "72b59c0e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-72-b-035"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/accessibility-9ae": {
-    "__comp": "17896441",
-    "content": "afd7a03a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-accessibilityafd-893"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/ad-content-standards-5d8": {
-    "__comp": "17896441",
-    "content": "55d673e8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-ad-content-standards-55-d-9a3"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/app-rating-guidelines-3f3": {
-    "__comp": "17896441",
-    "content": "36210654"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-app-rating-guidelines-362-b13"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/app-requirements-8c8": {
-    "__comp": "17896441",
-    "content": "ad1b3b48"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-app-requirementsad-1-f06"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/closed-captions-57d": {
-    "__comp": "17896441",
-    "content": "c5032335"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-closed-captionsc-50-c90"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/content-discovery-0b9": {
-    "__comp": "17896441",
-    "content": "12132340"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-content-discovery-121-5dc"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/content-service-guidelines-374": {
-    "__comp": "17896441",
-    "content": "9202c67a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-content-service-guidelines-920-3f5"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/deep-linking-43e": {
-    "__comp": "17896441",
-    "content": "290e7337"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-deep-linking-290-4d5"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/email-prefill-ba0": {
-    "__comp": "17896441",
-    "content": "865720d0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-email-prefill-865-ddc"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/lifecycle-management-697": {
-    "__comp": "17896441",
-    "content": "16044dfb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-lifecycle-management-160-f9c"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/listening-for-events-838": {
-    "__comp": "17896441",
-    "content": "60a18e7a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-listening-for-events-60-a-e8d"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/localization-e6c": {
-    "__comp": "17896441",
-    "content": "14f66a77"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-localization-14-f-1db"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/metadata-integration-632": {
-    "__comp": "17896441",
-    "content": "b5da28b4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-metadata-integrationb-5-d-43c"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/open-gmrss-format-913": {
-    "__comp": "17896441",
-    "content": "898f09ee"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-open-gmrss-format-898-753"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/parental-controls-5ea": {
-    "__comp": "17896441",
-    "content": "c38e3d9c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-parental-controlsc-38-fed"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/profile-flags-392": {
-    "__comp": "17896441",
-    "content": "30729394"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-profile-flags-307-fcd"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/quick-start-guide-2ae": {
-    "__comp": "17896441",
-    "content": "be102b4a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-quick-start-guidebe-1-35e"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/remote-specifications-ddf": {
-    "__comp": "17896441",
-    "content": "ff194e2b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-remote-specificationsff-1-75e"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/sign-in-and-sign-up-fa7": {
-    "__comp": "17896441",
-    "content": "07771c38"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-sign-in-and-sign-up-077-88d"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/voice-commands-c7e": {
-    "__comp": "17896441",
-    "content": "af83a655"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-voice-commandsaf-8-fb2"
   },
   "/dousarus-demo/docs/0.6.0/firebolt/docs/voice-guidance-68a": {
-    "__comp": "17896441",
-    "content": "60f8ff34"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-firebolt-docs-voice-guidance-60-f-3b6"
   },
   "/dousarus-demo/docs/0.6.0/intro-b32": {
-    "__comp": "17896441",
-    "content": "54dbc4b0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-intro-54-d-b8e"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/-4bc": {
-    "__comp": "17896441",
-    "content": "5e27ce2b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-5-e-2-bd6"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/-a77": {
-    "__comp": "17896441",
-    "content": "c7d0c444"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-c-7-d-326"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/accessibility/-6cd": {
-    "__comp": "17896441",
-    "content": "d42835ea"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-accessibility-d-42-959"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-availability/-615": {
-    "__comp": "17896441",
-    "content": "26adbee1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-availability-26-a-4bd"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/-3e6": {
-    "__comp": "17896441",
-    "content": "fd6d3811"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-fd-6-7f7"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/-633": {
-    "__comp": "17896441",
-    "content": "14b40e7d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-dvr-14-b-3ef"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/-c0a": {
-    "__comp": "17896441",
-    "content": "b1e7c68e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-linear-b-1-e-162"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/-61e": {
-    "__comp": "17896441",
-    "content": "b7a5abb0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-b-7-a-081"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/-1fe": {
-    "__comp": "17896441",
-    "content": "b3572715"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-livod-b-35-1c2"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/-147": {
-    "__comp": "17896441",
-    "content": "621eec6f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-locker-621-e8e"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/content-entitlements/-4d3": {
-    "__comp": "17896441",
-    "content": "c1876461"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-content-entitlements-c-18-fd0"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/-c6d": {
-    "__comp": "17896441",
-    "content": "b5bee3fc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-entities-and-xrns-b-5-b-4fa"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/-626": {
-    "__comp": "17896441",
-    "content": "1e925115"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-privacy-and-optouts-1-e-9-50b"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/core-concepts/profile-and-owners/-91a": {
-    "__comp": "17896441",
-    "content": "bab09bc8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-core-concepts-profile-and-owners-bab-23d"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/experience/-fe9": {
-    "__comp": "17896441",
-    "content": "a0e3e27b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-experience-a-0-e-a68"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/identity-and-access/-e0d": {
-    "__comp": "17896441",
-    "content": "6d7436b7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-identity-and-access-6-d-7-c69"
   },
   "/dousarus-demo/docs/0.6.0/xvp-docs/getting-started/ingest/-66e": {
-    "__comp": "17896441",
-    "content": "b7b4810f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-6-0-xvp-docs-getting-started-ingest-b-7-b-b31"
   },
   "/dousarus-demo/docs/0.7.0-c79": {
-    "__comp": "1be78505",
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "versionMetadata": "2fe15297"
+    "versionMetadata": "versionMetadata---dousarus-demo-docs-0-7-02-fe-9ed"
   },
   "/dousarus-demo/docs/0.7.0/category/firebolt-a78": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "5524155a"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-0-7-0-category-firebolt-552-90b"
   },
   "/dousarus-demo/docs/0.7.0/category/tutorial---basics-1d1": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "9d260fe4"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-0-7-0-category-tutorial-basics-9-d-2-c56"
   },
   "/dousarus-demo/docs/0.7.0/category/tutorial---extras-ad6": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "83e86a9f"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-0-7-0-category-tutorial-extras-83-e-b1d"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/-3a5": {
-    "__comp": "17896441",
-    "content": "530f7bd2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-530-c62"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/accessibility-30c": {
-    "__comp": "17896441",
-    "content": "9f1a2589"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-accessibility-9-f-1-a02"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/ad-content-standards-02d": {
-    "__comp": "17896441",
-    "content": "64b230da"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-ad-content-standards-64-b-20f"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/app-rating-guidelines-dd2": {
-    "__comp": "17896441",
-    "content": "f69bae6e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-app-rating-guidelinesf-69-177"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/app-requirements-4ff": {
-    "__comp": "17896441",
-    "content": "8fa3fe5a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-app-requirements-8-fa-8e0"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/closed-captions-f36": {
-    "__comp": "17896441",
-    "content": "5cb8bf0b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-closed-captions-5-cb-c57"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/content-discovery-fe2": {
-    "__comp": "17896441",
-    "content": "0fee02c3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-content-discovery-0-fe-4ee"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/content-service-guidelines-b24": {
-    "__comp": "17896441",
-    "content": "29227ec5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-content-service-guidelines-292-bad"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/deep-linking-a8a": {
-    "__comp": "17896441",
-    "content": "eb3f7380"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-deep-linkingeb-3-1d0"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/email-prefill-f9e": {
-    "__comp": "17896441",
-    "content": "010a1931"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-email-prefill-010-63a"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/lifecycle-management-7f2": {
-    "__comp": "17896441",
-    "content": "861870de"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-lifecycle-management-861-96c"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/listening-for-events-236": {
-    "__comp": "17896441",
-    "content": "fcb7ce9f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-listening-for-eventsfcb-6f2"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/listening-for-property-changes-681": {
-    "__comp": "17896441",
-    "content": "af5e0706"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-listening-for-property-changesaf-5-292"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/localization-4e6": {
-    "__comp": "17896441",
-    "content": "b3bd5d8c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-localizationb-3-b-dc4"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/metadata-integration-8ed": {
-    "__comp": "17896441",
-    "content": "365be75c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-metadata-integration-365-afd"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/open-gmrss-format-552": {
-    "__comp": "17896441",
-    "content": "eb3a6600"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-open-gmrss-formateb-3-d80"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/parental-controls-7b4": {
-    "__comp": "17896441",
-    "content": "2d94ec40"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-parental-controls-2-d-9-98b"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/profile-flags-7c7": {
-    "__comp": "17896441",
-    "content": "6097a125"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-profile-flags-609-a23"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/quick-start-guide-385": {
-    "__comp": "17896441",
-    "content": "c1cb9328"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-quick-start-guidec-1-c-5fd"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/remote-specifications-40a": {
-    "__comp": "17896441",
-    "content": "5d7a0b31"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-remote-specifications-5-d-7-563"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/sign-in-and-sign-up-267": {
-    "__comp": "17896441",
-    "content": "078d20c4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-sign-in-and-sign-up-078-daa"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/voice-commands-34b": {
-    "__comp": "17896441",
-    "content": "6791de96"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-voice-commands-679-fb6"
   },
   "/dousarus-demo/docs/0.7.0/firebolt/docs/voice-guidance-9b0": {
-    "__comp": "17896441",
-    "content": "199d0a23"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-firebolt-docs-voice-guidance-199-c3b"
   },
   "/dousarus-demo/docs/0.7.0/intro-ede": {
-    "__comp": "17896441",
-    "content": "119fbfb6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-intro-119-9bf"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/congratulations-905": {
-    "__comp": "17896441",
-    "content": "8950b7b2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-congratulations-895-209"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-blog-post-68e": {
-    "__comp": "17896441",
-    "content": "8efa4038"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-create-a-blog-post-8-ef-165"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-document-45c": {
-    "__comp": "17896441",
-    "content": "591972d8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-create-a-document-591-4cc"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/create-a-page-64c": {
-    "__comp": "17896441",
-    "content": "170c3148"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-create-a-page-170-849"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/deploy-your-site-702": {
-    "__comp": "17896441",
-    "content": "5a4b141d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-deploy-your-site-5-a-4-753"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-basics/markdown-features-1e2": {
-    "__comp": "17896441",
-    "content": "14403f25"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-basics-markdown-features-144-37f"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-extras/manage-docs-versions-a47": {
-    "__comp": "17896441",
-    "content": "0e35446a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-extras-manage-docs-versions-0-e-3-68d"
   },
   "/dousarus-demo/docs/0.7.0/tutorial-extras/translate-your-site-d95": {
-    "__comp": "17896441",
-    "content": "e1e3f10e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-tutorial-extras-translate-your-sitee-1-e-795"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/-855": {
-    "__comp": "17896441",
-    "content": "bdf95cbe"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-bdf-6a8"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/-50f": {
-    "__comp": "17896441",
-    "content": "11efed96"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-11-e-e17"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/accessibility/-3c6": {
-    "__comp": "17896441",
-    "content": "84afb4a7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-accessibility-84-a-087"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-availability/-985": {
-    "__comp": "17896441",
-    "content": "928ca1df"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-availability-928-322"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/-b22": {
-    "__comp": "17896441",
-    "content": "8fd267f7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-8-fd-3c4"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/-f22": {
-    "__comp": "17896441",
-    "content": "271660ba"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-dvr-271-4be"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/linear/-2cc": {
-    "__comp": "17896441",
-    "content": "a35d485f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-linear-a-35-2d4"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/-ef2": {
-    "__comp": "17896441",
-    "content": "38b5261e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-38-b-48a"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/-74c": {
-    "__comp": "17896441",
-    "content": "0ee8c879"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-livod-0-ee-fec"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/-b80": {
-    "__comp": "17896441",
-    "content": "d9dcf40d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-catalogs-vod-locker-d-9-d-7b3"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/content-entitlements/-8bb": {
-    "__comp": "17896441",
-    "content": "d6b3299d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-content-entitlements-d-6-b-578"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/entities-and-xrns/-256": {
-    "__comp": "17896441",
-    "content": "733d4965"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-entities-and-xrns-733-1d4"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/privacy-and-optouts/-d45": {
-    "__comp": "17896441",
-    "content": "a6d58d63"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-privacy-and-optouts-a-6-d-96f"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/core-concepts/profile-and-owners/-bb8": {
-    "__comp": "17896441",
-    "content": "ee500059"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-core-concepts-profile-and-owners-ee-5-a6f"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/experience/-f4c": {
-    "__comp": "17896441",
-    "content": "31b7c1de"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-experience-31-b-454"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/identity-and-access/-717": {
-    "__comp": "17896441",
-    "content": "3ef635d1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-identity-and-access-3-ef-317"
   },
   "/dousarus-demo/docs/0.7.0/xvp-docs/getting-started/ingest/-3e1": {
-    "__comp": "17896441",
-    "content": "6f74b8d8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-0-7-0-xvp-docs-getting-started-ingest-6-f-7-b09"
   },
-  "/dousarus-demo/docs/next-0c5": {
-    "__comp": "1be78505",
+  "/dousarus-demo/docs/next-a7c": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "versionMetadata": "935f2afb"
+    "versionMetadata": "versionMetadata---dousarus-demo-docs-next-935-093"
   },
   "/dousarus-demo/docs/next/category/firebolt-a3a": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "4ea1e5a8"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-next-category-firebolt-4-ea-28b"
   },
   "/dousarus-demo/docs/next/category/xvp-docs-287": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "21e2e6bc"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-next-category-xvp-docs-21-e-dc2"
   },
   "/dousarus-demo/docs/next/firebolt/docs/-9c3": {
-    "__comp": "17896441",
-    "content": "b4a7a4a3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-b-4-a-fee"
   },
   "/dousarus-demo/docs/next/firebolt/docs/accessibility-72a": {
-    "__comp": "17896441",
-    "content": "2b50b3e7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-accessibility-2-b-5-bf1"
   },
   "/dousarus-demo/docs/next/firebolt/docs/ad-content-standards-628": {
-    "__comp": "17896441",
-    "content": "50cc0109"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-ad-content-standards-50-c-145"
   },
   "/dousarus-demo/docs/next/firebolt/docs/app-rating-guidelines-c38": {
-    "__comp": "17896441",
-    "content": "f5a5ee62"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-app-rating-guidelinesf-5-a-d41"
   },
   "/dousarus-demo/docs/next/firebolt/docs/app-requirements-cf0": {
-    "__comp": "17896441",
-    "content": "d82dca8f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-app-requirementsd-82-dae"
   },
   "/dousarus-demo/docs/next/firebolt/docs/closed-captions-205": {
-    "__comp": "17896441",
-    "content": "3cfd7b00"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-closed-captions-3-cf-c92"
   },
   "/dousarus-demo/docs/next/firebolt/docs/content-discovery-b2e": {
-    "__comp": "17896441",
-    "content": "e9cda769"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-content-discoverye-9-c-b77"
   },
   "/dousarus-demo/docs/next/firebolt/docs/content-service-guidelines-1a3": {
-    "__comp": "17896441",
-    "content": "8438bbed"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-content-service-guidelines-843-224"
   },
   "/dousarus-demo/docs/next/firebolt/docs/deep-linking-784": {
-    "__comp": "17896441",
-    "content": "a1a10397"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-deep-linkinga-1-a-272"
   },
   "/dousarus-demo/docs/next/firebolt/docs/email-prefill-c95": {
-    "__comp": "17896441",
-    "content": "4cf325db"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-email-prefill-4-cf-3ee"
   },
   "/dousarus-demo/docs/next/firebolt/docs/lifecycle-management-10b": {
-    "__comp": "17896441",
-    "content": "15054caa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-lifecycle-management-150-f61"
   },
   "/dousarus-demo/docs/next/firebolt/docs/listening-for-events-6ee": {
-    "__comp": "17896441",
-    "content": "cc2867fd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-listening-for-eventscc-2-39d"
   },
   "/dousarus-demo/docs/next/firebolt/docs/listening-for-property-changes-44d": {
-    "__comp": "17896441",
-    "content": "6b48a9c8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-listening-for-property-changes-6-b-4-04c"
   },
   "/dousarus-demo/docs/next/firebolt/docs/localization-17a": {
-    "__comp": "17896441",
-    "content": "b63fe4bf"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-localizationb-63-5c8"
   },
   "/dousarus-demo/docs/next/firebolt/docs/metadata-integration-30f": {
-    "__comp": "17896441",
-    "content": "fea04a39"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-metadata-integrationfea-170"
   },
   "/dousarus-demo/docs/next/firebolt/docs/open-gmrss-format-ac6": {
-    "__comp": "17896441",
-    "content": "a1d9c13c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-open-gmrss-formata-1-d-529"
   },
   "/dousarus-demo/docs/next/firebolt/docs/parental-controls-e13": {
-    "__comp": "17896441",
-    "content": "7dbb40de"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-parental-controls-7-db-498"
   },
   "/dousarus-demo/docs/next/firebolt/docs/profile-flags-d88": {
-    "__comp": "17896441",
-    "content": "09c50c32"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-profile-flags-09-c-fc7"
   },
   "/dousarus-demo/docs/next/firebolt/docs/quick-start-guide-156": {
-    "__comp": "17896441",
-    "content": "1d7b60a1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-quick-start-guide-1-d-7-a87"
   },
   "/dousarus-demo/docs/next/firebolt/docs/remote-specifications-d4f": {
-    "__comp": "17896441",
-    "content": "b02af817"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-remote-specificationsb-02-192"
   },
   "/dousarus-demo/docs/next/firebolt/docs/sign-in-and-sign-up-647": {
-    "__comp": "17896441",
-    "content": "0429273d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-sign-in-and-sign-up-042-eab"
   },
   "/dousarus-demo/docs/next/firebolt/docs/voice-commands-beb": {
-    "__comp": "17896441",
-    "content": "2380d86c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-voice-commands-238-92e"
   },
   "/dousarus-demo/docs/next/firebolt/docs/voice-guidance-84f": {
-    "__comp": "17896441",
-    "content": "9b745689"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-firebolt-docs-voice-guidance-9-b-7-242"
   },
-  "/dousarus-demo/docs/next/intro-c48": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+  "/dousarus-demo/docs/next/intro-ae0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-introf-84-4ec"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/-dd0": {
-    "__comp": "17896441",
-    "content": "1d78b5e9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-1-d-7-001"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/-e25": {
-    "__comp": "17896441",
-    "content": "78e19201"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-78-e-8e1"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/accessibility/-2e1": {
-    "__comp": "17896441",
-    "content": "91fe48dc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-accessibility-91-f-31a"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-availability/-e33": {
-    "__comp": "17896441",
-    "content": "5d5d2058"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-availability-5-d-5-ed4"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/-5aa": {
-    "__comp": "17896441",
-    "content": "e3a79346"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-e-3-a-803"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/-f11": {
-    "__comp": "17896441",
-    "content": "f3555dc8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-dvr-f-35-80e"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/linear/-f64": {
-    "__comp": "17896441",
-    "content": "35b0bdbd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-linear-35-b-c58"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/-3d3": {
-    "__comp": "17896441",
-    "content": "5b1ac7db"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-vod-5-b-1-ce0"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/-27b": {
-    "__comp": "17896441",
-    "content": "0a2e997e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-vod-livod-0-a-2-b96"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/-e47": {
-    "__comp": "17896441",
-    "content": "3c803238"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-catalogs-vod-locker-3-c-8-1ac"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/content-entitlements/-5b8": {
-    "__comp": "17896441",
-    "content": "4dea990d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-content-entitlements-4-de-ced"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/entities-and-xrns/-ab6": {
-    "__comp": "17896441",
-    "content": "8d558556"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-entities-and-xrns-8-d-5-f98"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/privacy-and-optouts/-8c3": {
-    "__comp": "17896441",
-    "content": "0df75628"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-privacy-and-optouts-0-df-1ee"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/core-concepts/profile-and-owners/-b5b": {
-    "__comp": "17896441",
-    "content": "08f5092d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-core-concepts-profile-and-owners-08-f-695"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/experience/-f02": {
-    "__comp": "17896441",
-    "content": "caf376fc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-experience-caf-aa0"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/identity-and-access/-e25": {
-    "__comp": "17896441",
-    "content": "ab7946e2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-identity-and-access-ab-7-84c"
   },
   "/dousarus-demo/docs/next/xvp-docs/getting-started/ingest/-a82": {
-    "__comp": "17896441",
-    "content": "6e4886e6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-next-xvp-docs-getting-started-ingest-6-e-4-815"
   },
   "/dousarus-demo/docs-3ac": {
-    "__comp": "1be78505",
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "42c4021d"
+      "plugin": "plugin---dousarus-demo-docs-0-6-0-tags-42-c-bc2"
     },
-    "versionMetadata": "62e81aa6"
+    "versionMetadata": "versionMetadata---dousarus-demo-docs-62-e-ad2"
   },
   "/dousarus-demo/docs/category/firebolt-fa4": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "74b24747"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-category-firebolt-74-b-2e1"
   },
   "/dousarus-demo/docs/category/xvp-docs-571": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "5fea6260"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---dousarus-demo-docs-category-xvp-docs-5-fe-577"
   },
   "/dousarus-demo/docs/firebolt/docs/-4a8": {
-    "__comp": "17896441",
-    "content": "6d12e5dd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-6-d-1-e47"
   },
   "/dousarus-demo/docs/firebolt/docs/accessibility-e43": {
-    "__comp": "17896441",
-    "content": "77a96d3a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-accessibility-77-a-c2a"
   },
   "/dousarus-demo/docs/firebolt/docs/ad-content-standards-9e1": {
-    "__comp": "17896441",
-    "content": "b27dc94f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-ad-content-standardsb-27-556"
   },
   "/dousarus-demo/docs/firebolt/docs/app-rating-guidelines-9b9": {
-    "__comp": "17896441",
-    "content": "9320dad0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-app-rating-guidelines-932-474"
   },
   "/dousarus-demo/docs/firebolt/docs/app-requirements-843": {
-    "__comp": "17896441",
-    "content": "a9ef1262"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-app-requirementsa-9-e-263"
   },
   "/dousarus-demo/docs/firebolt/docs/closed-captions-89e": {
-    "__comp": "17896441",
-    "content": "7394ac46"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-closed-captions-739-eb3"
   },
   "/dousarus-demo/docs/firebolt/docs/content-discovery-650": {
-    "__comp": "17896441",
-    "content": "41c250ea"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-content-discovery-41-c-b75"
   },
   "/dousarus-demo/docs/firebolt/docs/content-service-guidelines-062": {
-    "__comp": "17896441",
-    "content": "b94bdcab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-content-service-guidelinesb-94-726"
   },
   "/dousarus-demo/docs/firebolt/docs/deep-linking-43e": {
-    "__comp": "17896441",
-    "content": "9b3ff856"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-deep-linking-9-b-3-10b"
   },
   "/dousarus-demo/docs/firebolt/docs/email-prefill-19c": {
-    "__comp": "17896441",
-    "content": "1c359bc8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-email-prefill-1-c-3-d2e"
   },
   "/dousarus-demo/docs/firebolt/docs/lifecycle-management-430": {
-    "__comp": "17896441",
-    "content": "d0e06656"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-lifecycle-managementd-0-e-758"
   },
   "/dousarus-demo/docs/firebolt/docs/listening-for-events-15c": {
-    "__comp": "17896441",
-    "content": "151f0610"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-listening-for-events-151-4a1"
   },
   "/dousarus-demo/docs/firebolt/docs/listening-for-property-changes-6b4": {
-    "__comp": "17896441",
-    "content": "f17c2266"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-listening-for-property-changesf-17-464"
   },
   "/dousarus-demo/docs/firebolt/docs/localization-f26": {
-    "__comp": "17896441",
-    "content": "68b6158e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-localization-68-b-f8d"
   },
   "/dousarus-demo/docs/firebolt/docs/metadata-integration-46d": {
-    "__comp": "17896441",
-    "content": "6580fd58"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-metadata-integration-658-653"
   },
   "/dousarus-demo/docs/firebolt/docs/open-gmrss-format-4d8": {
-    "__comp": "17896441",
-    "content": "75ec1e7e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-open-gmrss-format-75-e-344"
   },
   "/dousarus-demo/docs/firebolt/docs/parental-controls-a76": {
-    "__comp": "17896441",
-    "content": "90a9d4fa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-parental-controls-90-a-37e"
   },
   "/dousarus-demo/docs/firebolt/docs/profile-flags-20a": {
-    "__comp": "17896441",
-    "content": "ffd9d0b1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-profile-flagsffd-eec"
   },
   "/dousarus-demo/docs/firebolt/docs/quick-start-guide-203": {
-    "__comp": "17896441",
-    "content": "a4ecd2c1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-quick-start-guidea-4-e-5d8"
   },
   "/dousarus-demo/docs/firebolt/docs/remote-specifications-a77": {
-    "__comp": "17896441",
-    "content": "e2885e68"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-remote-specificationse-28-150"
   },
   "/dousarus-demo/docs/firebolt/docs/sign-in-and-sign-up-548": {
-    "__comp": "17896441",
-    "content": "a2be4d63"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-sign-in-and-sign-upa-2-b-192"
   },
   "/dousarus-demo/docs/firebolt/docs/voice-commands-ffc": {
-    "__comp": "17896441",
-    "content": "c604f594"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-voice-commandsc-60-e25"
   },
   "/dousarus-demo/docs/firebolt/docs/voice-guidance-ffe": {
-    "__comp": "17896441",
-    "content": "20c869a6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-firebolt-docs-voice-guidance-20-c-d77"
   },
   "/dousarus-demo/docs/intro-f34": {
-    "__comp": "17896441",
-    "content": "5d94dea0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-intro-5-d-9-3e3"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/-bb6": {
-    "__comp": "17896441",
-    "content": "9cd2bdc9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-9-cd-8db"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/-cfe": {
-    "__comp": "17896441",
-    "content": "61ddeb2c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-61-d-d4d"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/accessibility/-241": {
-    "__comp": "17896441",
-    "content": "101360a6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-accessibility-101-a0f"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-availability/-aee": {
-    "__comp": "17896441",
-    "content": "db4851b1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-availability-db-4-baf"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/-c53": {
-    "__comp": "17896441",
-    "content": "47968c34"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-479-be5"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/dvr/-535": {
-    "__comp": "17896441",
-    "content": "d476fee5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-dvr-d-47-a17"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/linear/-9e6": {
-    "__comp": "17896441",
-    "content": "583ae081"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-linear-583-e4d"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/-1f0": {
-    "__comp": "17896441",
-    "content": "2fda987f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-vod-2-fd-6c4"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/livod/-a68": {
-    "__comp": "17896441",
-    "content": "a45947b0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-vod-livod-a-45-52e"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-catalogs/vod/locker/-b28": {
-    "__comp": "17896441",
-    "content": "d8a8d6d8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-catalogs-vod-locker-d-8-a-068"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/content-entitlements/-8d8": {
-    "__comp": "17896441",
-    "content": "e3d6c461"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-content-entitlements-e-3-d-447"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/entities-and-xrns/-8be": {
-    "__comp": "17896441",
-    "content": "e7283c25"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-entities-and-xrns-e-72-594"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/privacy-and-optouts/-203": {
-    "__comp": "17896441",
-    "content": "2009c8fb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-privacy-and-optouts-200-0ac"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/core-concepts/profile-and-owners/-024": {
-    "__comp": "17896441",
-    "content": "f0f23c87"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-core-concepts-profile-and-owners-f-0-f-89e"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/experience/-f68": {
-    "__comp": "17896441",
-    "content": "0a0d8d8c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-experience-0-a-0-510"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/identity-and-access/-776": {
-    "__comp": "17896441",
-    "content": "8c452c41"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-identity-and-access-8-c-4-fa0"
   },
   "/dousarus-demo/docs/xvp-docs/getting-started/ingest/-bac": {
-    "__comp": "17896441",
-    "content": "405a0877"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dousarus-demo-docs-xvp-docs-getting-started-ingest-405-615"
   },
   "/dousarus-demo/-872": {
-    "__comp": "1df93b7f",
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "702e9290"
+      "plugin": "plugin---dousarus-demo-hello-react-702-6c1"
     },
-    "config": "5e9f5e1a"
+    "config": "config---dousarus-demo-hello-react-5-e-9-903"
   }
 }

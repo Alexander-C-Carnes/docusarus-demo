@@ -1042,9 +1042,9 @@
     "179": {
       "js": [
         {
-          "file": "assets/js/main.7946fe65.js",
-          "hash": "f0af8dd18bf949ff",
-          "publicPath": "/dousarus-demo/assets/js/main.7946fe65.js"
+          "file": "assets/js/main.09237033.js",
+          "hash": "831aa951485ec710",
+          "publicPath": "/dousarus-demo/assets/js/main.09237033.js"
         }
       ]
     },
@@ -1304,7 +1304,7 @@
       "js": [
         {
           "file": "assets/js/runtime~main.38a8d935.js",
-          "hash": "44f7df449b281e61",
+          "hash": "7c5dc998e7e954bf",
           "publicPath": "/dousarus-demo/assets/js/runtime~main.38a8d935.js"
         }
       ]

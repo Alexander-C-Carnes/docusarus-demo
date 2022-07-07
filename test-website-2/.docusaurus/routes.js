@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/dousarus-demo/__docusaurus/debug',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug', '3dc'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/config',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/config', 'c1c'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/content',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/content', 'b01'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/globalData',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/globalData', 'f09'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/metadata',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/metadata', 'c1a'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/registry',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/registry', 'bba'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/__docusaurus/debug/routes',
+    component: ComponentCreator('/dousarus-demo/__docusaurus/debug/routes', 'fbe'),
+    exact: true
+  },
+  {
     path: '/dousarus-demo/blog',
     component: ComponentCreator('/dousarus-demo/blog', 'e06'),
     exact: true
@@ -520,6 +555,11 @@ export default [
   {
     path: '/dousarus-demo/helloReact',
     component: ComponentCreator('/dousarus-demo/helloReact', '231'),
+    exact: true
+  },
+  {
+    path: '/dousarus-demo/index_dep',
+    component: ComponentCreator('/dousarus-demo/index_dep', '77f'),
     exact: true
   },
   {
@@ -1099,7 +1139,7 @@ export default [
   },
   {
     path: '/dousarus-demo/docs/next',
-    component: ComponentCreator('/dousarus-demo/docs/next', '0c5'),
+    component: ComponentCreator('/dousarus-demo/docs/next', 'a7c'),
     routes: [
       {
         path: '/dousarus-demo/docs/next/category/firebolt',
@@ -1253,7 +1293,7 @@ export default [
       },
       {
         path: '/dousarus-demo/docs/next/intro',
-        component: ComponentCreator('/dousarus-demo/docs/next/intro', 'c48'),
+        component: ComponentCreator('/dousarus-demo/docs/next/intro', 'ae0'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

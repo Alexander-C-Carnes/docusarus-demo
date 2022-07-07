@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'XVP and Firebolt Example',
   tagline: 'Showcase the power of a static site generator for our docs',
-  url: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
+  url: 'https://alexander-c-carnes.github.io',
   baseUrl: '/dousarus-demo/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +26,14 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+  [
+    'docusaurus2-dotenv',
+    {
+      systemvars: true
+    }
+  ]
+],
   presets: [
     [
       'classic',
@@ -34,13 +41,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-
-
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -54,7 +60,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

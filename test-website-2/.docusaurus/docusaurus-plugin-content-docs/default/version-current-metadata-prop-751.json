@@ -10,7 +10,7 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Firebolt and XVP Showcase",
+        "label": "intro",
         "href": "/dousarus-demo/docs/next/intro",
         "docId": "intro"
       },
@@ -430,7 +430,7 @@
     },
     "intro": {
       "id": "intro",
-      "title": "Firebolt and XVP Showcase",
+      "title": "intro",
       "description": "Showing what a static HTML generator can do.",
       "sidebar": "tutorialSidebar"
     },
