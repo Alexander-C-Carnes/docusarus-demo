@@ -70,7 +70,7 @@ const redocusaurus = [
 const config = {
   title: 'RDK Central Test Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
   baseUrl: '/dousarus-demo/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -248,7 +248,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
               },
             ],
           },
