@@ -1,0 +1,10 @@
+{
+  "label": "Discovery",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Discovery"
+  }
+}

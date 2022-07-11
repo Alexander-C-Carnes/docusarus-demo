@@ -148,6 +148,12 @@ const config = {
         },
         items: [
           {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          to: '/path',
+          label: 'label',
+        },
+          {
             type: 'doc',
             docId: 'firebolt/getting-started/quick-start-guide',
             position: 'left',
