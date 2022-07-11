@@ -4,6 +4,62 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const redocusaurus = [
+  'redocusaurus',
+  {
+    debug: Boolean(process.env.DEBUG || process.env.CI),
+    specs: [
+      {
+        id: 'using-single-yaml',
+        spec: 'openapi/single-file/openapi.yaml',
+        route: '/examples/using-single-yaml/',
+      },
+      {
+        id: 'using-multi-file-yaml',
+        spec: 'openapi/multi-file/openapi.yaml',
+        route: '/examples/using-multi-file-yaml/',
+      },
+      {
+        id: 'using-swagger-json',
+        spec: 'openapi/swagger/swagger.json',
+        route: '/examples/using-swagger-json/',
+      },
+      {
+        id: 'using-remote-url',
+        // Remote File
+        spec: 'https://redocly.github.io/redoc/openapi.yaml',
+        route: '/examples/using-remote-url/',
+      },
+      {
+        id: 'using-custom-page',
+        spec: 'openapi/single-file/openapi.yaml',
+        // NOTE: no `route` passed, instead data used in custom React Component ('custom-page/index.jsx')
+      },
+      {
+        id: 'using-custom-layout',
+        spec: 'openapi/single-file/openapi.yaml',
+        // NOTE: no `route` passed, instead data used in custom React Component ('custom-layout/index.jsx')
+      },
+    ],
+    theme: {
+      /**
+       * Highlight color for docs
+       */
+      primaryColor: '#1890ff',
+      /**
+       * Options to pass to redoc
+       * @see https://github.com/redocly/redoc#redoc-options-object
+       */
+      options: { disableSearch: true },
+      /**
+       * Options to pass to override RedocThemeObject
+       * @see https://github.com/Redocly/redoc#redoc-theme-object
+       */
+      theme: {},
+    },
+  },
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'RDK Central Test Site',
@@ -32,11 +88,12 @@ const config = {
       {
         systemvars: true
       }
-    ]
+    ],
+
   ],
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -70,13 +127,15 @@ const config = {
         },
       }),
     ],
+    // Redocusaurus Config
+    redocusaurus,
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'RDK Central Firebolt',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -84,9 +143,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-started/quick-start-guide',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Firebolt Documentation',
           },
           {
             position: 'right',
@@ -98,6 +157,40 @@ const config = {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
+          },
+              {
+            label: 'Examples',
+            position: 'left',
+            items: [
+              {
+                label: 'All',
+                to: '/examples',
+              },
+              {
+                label: 'Using Single YAML',
+                to: '/examples/using-single-yaml/',
+              },
+              {
+                label: 'Using Remote URL',
+                to: '/examples/using-remote-url/',
+              },
+              {
+                label: 'Using Multiple YAMLs',
+                to: '/examples/using-multi-file-yaml/',
+              },
+              {
+                label: 'Using Swagger',
+                to: '/examples/using-swagger-json/',
+              },
+              {
+                label: 'Custom Page',
+                to: '/examples/custom-page/',
+              },
+              {
+                label: 'Custom Layout',
+                to: '/examples/custom-layout/',
+              },
+            ],
           },
         ],
       },
