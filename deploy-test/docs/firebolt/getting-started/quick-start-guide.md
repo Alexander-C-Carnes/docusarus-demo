@@ -1,9 +1,9 @@
 ---
-title: Getting Started
+title: Quickstart Guide
 sidebar_position: 1
 ---
 
-# Getting Started Guide
+# Quickstart Guide
 Getting your app up and running on Firebolt takes just a few simple steps.
 
 Most of your app's code is dealing with your own content and services, and rightfully so! However, there are a few minor APIs that your app will need to call in order to function in a Firebolt-compliant manner. Most of these APIs require just one line of code.

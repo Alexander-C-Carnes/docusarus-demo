@@ -44,7 +44,6 @@ const redocusaurus = [
         id: 'using-xvp-docs',
         spec: 'openapi/xvp-api/xvp.json',
         route: '/examples/using-xvp-docs/',
-
         // NOTE: no `route` passed, instead data used in custom React Component ('custom-layout/index.jsx')
       },
     ],
@@ -150,9 +149,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'getting-started/quick-start-guide',
+            docId: 'firebolt/getting-started/quick-start-guide',
             position: 'left',
             label: 'Firebolt Documentation',
+          },
+          {
+            type: 'doc',
+            docId: 'xvp-docs/getting-started/index',
+            position: 'left',
+            label: 'XVP Documentation',
           },
           {
             position: 'right',
@@ -166,7 +171,7 @@ const config = {
             position: 'right',
           },
               {
-            label: 'Examples',
+            label: 'API Examples',
             position: 'left',
             items: [
               {
