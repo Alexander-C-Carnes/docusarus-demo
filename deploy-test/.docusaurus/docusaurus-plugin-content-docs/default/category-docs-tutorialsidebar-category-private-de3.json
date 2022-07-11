@@ -1,0 +1,16 @@
+{
+  "title": "Private",
+  "description": "Demo of access controlled content",
+  "slug": "/category/private",
+  "permalink": "/docs/category/private",
+  "navigation": {
+    "previous": {
+      "title": "Translate your site",
+      "permalink": "/docs/tutorial-extras/translate-your-site"
+    },
+    "next": {
+      "title": "Private Content",
+      "permalink": "/docs/private/private_info_text"
+    }
+  }
+}
