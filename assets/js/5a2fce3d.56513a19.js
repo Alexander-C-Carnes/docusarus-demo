@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdeploy_test=self.webpackChunkdeploy_test||[]).push([[405],{88191:t=>{t.exports=JSON.parse('{"title":"Getting Started","slug":"/category/getting-started","permalink":"/dousarus-demo/docs/category/getting-started","navigation":{"next":{"title":"Getting Started","permalink":"/dousarus-demo/docs/getting-started/quick-start-guide"}}}')}}]);
