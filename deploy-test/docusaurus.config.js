@@ -151,13 +151,7 @@ const config = {
             type: 'doc',
             docId: 'firebolt/getting-started/quick-start-guide',
             position: 'left',
-            label: 'Firebolt Documentation',
-          },
-          {
-            type: 'doc',
-            docId: 'xvp-docs/getting-started/index',
-            position: 'left',
-            label: 'XVP Documentation',
+            label: 'Documentation',
           },
           {
             position: 'right',
