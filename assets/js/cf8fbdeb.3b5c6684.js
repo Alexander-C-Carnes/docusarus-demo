@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdeploy_test=self.webpackChunkdeploy_test||[]).push([[6072],{83521:i=>{i.exports=JSON.parse('{"title":"Accessibility","slug":"/category/accessibility","permalink":"/docs/category/accessibility","navigation":{"previous":{"title":"FAQs","permalink":"/docs/faqs"},"next":{"title":"Accessibility","permalink":"/docs/acessibility/accessibility"}}}')}}]);
