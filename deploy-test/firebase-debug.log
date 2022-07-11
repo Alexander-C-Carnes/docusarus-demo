@@ -1,0 +1,46 @@
+[debug] [2022-07-11T13:35:59.767Z] ----------------------------------------------------------------------
+[debug] [2022-07-11T13:35:59.769Z] Command:       /Users/alexander.carnes/.nvm/versions/node/v18.4.0/bin/node /Users/alexander.carnes/.config/yarn/global/node_modules/.bin/firebase emulators:start
+[debug] [2022-07-11T13:35:59.769Z] CLI Version:   11.2.1
+[debug] [2022-07-11T13:35:59.769Z] Platform:      darwin
+[debug] [2022-07-11T13:35:59.769Z] Node Version:  v18.4.0
+[debug] [2022-07-11T13:35:59.775Z] Time:          Mon Jul 11 2022 06:35:59 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-07-11T13:35:59.775Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-11T13:35:59.777Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-07-11T13:35:59.880Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-11T13:35:59.880Z] > authorizing via signed-in user (carnesaerau@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-07-11T13:35:59.893Z] [hub] writing locator at /var/folders/hs/nxf529xj0xs2v4znn91ywcqh0000gn/T/hub-docusarus-test.json
+[debug] [2022-07-11T13:35:59.906Z] > refreshing access token with scopes: []
+[debug] [2022-07-11T13:35:59.907Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-11T13:35:59.907Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-11T13:36:00.035Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-07-11T13:36:00.036Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-07-11T13:36:00.086Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-11T13:36:00.086Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-11T13:36:00.128Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/docusarus-test/sites 
+[debug] [2022-07-11T13:36:00.744Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/docusarus-test/sites 200
+[debug] [2022-07-11T13:36:00.745Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/docusarus-test/sites {"sites":[{"name":"projects/docusarus-test/sites/docusarus-test","defaultUrl":"https://docusarus-test.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-07-11T13:36:00.745Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/docusarus-test/webApps/-/config [none]
+[debug] [2022-07-11T13:36:01.229Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/docusarus-test/webApps/-/config 200
+[debug] [2022-07-11T13:36:01.230Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/docusarus-test/webApps/-/config {"projectId":"docusarus-test","appId":"1:115527424420:web:6d75f3b2a790cff4858931","databaseURL":"https://docusarus-test-default-rtdb.firebaseio.com","storageBucket":"docusarus-test.appspot.com","locationId":"us-central","apiKey":"AIzaSyDNHLptKwdOhPF_pB8BtPh_aUsq_VKAtd4","authDomain":"docusarus-test.firebaseapp.com","messagingSenderId":"115527424420","measurementId":"G-X2VMNYMS3L"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://0.0.0.0:3000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://0.0.0.0:3000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬──────────────┐
+│ Emulator │ Host:Port    │
+├──────────┼──────────────┤
+│ Hosting  │ 0.0.0.0:3000 │
+└──────────┴──────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [11/Jul/2022:13:36:18 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [11/Jul/2022:13:36:18 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0\""}}
+[info] i  hosting: 127.0.0.1 - - [11/Jul/2022:13:36:19 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [11/Jul/2022:13:36:19 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0\""}}
