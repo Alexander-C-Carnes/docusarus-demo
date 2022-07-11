@@ -160,7 +160,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
             label: 'GitHub',
             position: 'right',
           },
