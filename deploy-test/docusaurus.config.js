@@ -40,6 +40,13 @@ const redocusaurus = [
         spec: 'openapi/single-file/openapi.yaml',
         // NOTE: no `route` passed, instead data used in custom React Component ('custom-layout/index.jsx')
       },
+      {
+        id: 'using-xvp-docs',
+        spec: 'openapi/xvp-api/xvp.json',
+        route: '/examples/using-xvp-docs/',
+
+        // NOTE: no `route` passed, instead data used in custom React Component ('custom-layout/index.jsx')
+      },
     ],
     theme: {
       /**
@@ -65,14 +72,14 @@ const config = {
   title: 'RDK Central Test Site',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/dousarus-demo/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: ' Alexander-C-Carnes', // Usually your GitHub org/user name.
+  organizationName: 'Alexander-C-Carnes', // Usually your GitHub org/user name.
   projectName: 'dousarus-demo', // Usually your repo name.
   deploymentBranch: 'deployment-branch',
   // Even if you don't use internalization, you can use this field to set useful
@@ -165,6 +172,10 @@ const config = {
               {
                 label: 'All',
                 to: '/examples',
+              },
+              {
+                label: 'XVP Example',
+                to: '/examples/using-xvp-docs/',
               },
               {
                 label: 'Using Single YAML',
