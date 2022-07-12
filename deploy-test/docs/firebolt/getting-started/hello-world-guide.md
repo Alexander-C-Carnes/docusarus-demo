@@ -7,7 +7,7 @@ sidebar_position: 2
 
 In this practical guide, you'll learn how to get up and running so you can build a simple single-page app using Firebolt®. It will show you fundamentals like importing modules and how to use the Device and Lifecycle modules.
 
-The *\"Hello World\"* guide is designed with the following assumptions:
+The *Hello World* guide is designed with the following assumptions:
 
 -   You have some experience with the basics of programming (building apps, working with APIs, etc) and have some experience working with the JavaScript programming language. This guide does not explain object-oriented programming or the JavaScript language.
 
