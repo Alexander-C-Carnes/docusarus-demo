@@ -89,14 +89,15 @@ const config = {
     locales: ['en'],
   },
   plugins: [
+      //'@aldridged/docusaurus-plugin-lunr'
+      require.resolve("@cmfcmf/docusaurus-search-local"),
     [
-      'docusaurus2-dotenv',
-      {
-        systemvars: true
-      }
-    ],
-
-  ],
+    'docusaurus2-dotenv',
+    {
+      systemvars: true
+    }
+  ]
+],
   presets: [
     [
       '@docusaurus/preset-classic',
