@@ -1,0 +1,1860 @@
+openapi: 3.0.0
+
+info:
+  version: 1.0.0-oas3
+  title: XVP Experience - Discovery - Architecture Specifications
+  description: |
+    XVP Discovery APIs acts like an aggregator of content from different sources and brings the best of our applied AI algorithms
+    to present to users the TV content that is most relevant to them.
+
+    Discovery & Linear services always take availability into account and optionally entitlements as well when computing results.
+    Clients may want to turn availability checks off to leverage personalization functionality all by itself -
+    consider using `ignoreAvailability` parameter available in some Personalization APIs.
+
+    Prior to using these API's, clients must create a device session in XVP Session.
+
+externalDocs:
+  url: https://internal-xvp-docs-staging.r53.aae.comcast.net/
+  description: XVP Public API's Documentation
+
+servers:
+  - url: https://disco-{environment}.exp.xvp.na-1.xcal.tv/
+    description: ''
+    variables:
+      environment:
+        enum: [dev, staging]
+        default: staging
+  - url: https://internal-xvp-linear-api.{environment}.r53.aae.comcast.net/
+    description: ''
+    variables:
+      environment:
+        enum: [dev, staging]
+        default: staging
+
+paths:
+
+  # Watch Options
+
+  '/v1/partners/{partnerId}/entity/program/{entityId}/watchOptions':
+    get:
+      deprecated: true
+      tags:
+        - Watch Options
+      summary: Returns watch options for a non-series program for the content catalogs requested
+      description: >-
+        For the given account and device, returns available watch options grouped by content catalogs for the requested program ID.
+
+        See [Watch Options API](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/watch-options/) for more.
+
+        **Cache Policy:** xrn:cache:policy:disco:watchOptions
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsProgramId'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsContentCatalogTypes'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsVideoFormat'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'components-vod-livod.yml#/components/parameters/IncludeOutOfWindowLivod'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsInclude'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptions'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/WatchOptionsNotFound'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/WatchOptionsBadGateway'
+        503:
+          $ref: 'responses.yml#/components/responses/ServiceUnavailable'
+
+  '/v1/partners/{partnerId}/entity/seriesMaster/{entityId}/watchOptions':
+    get:
+      deprecated: true
+      tags:
+        - Watch Options
+      summary: Returns watch options for a series program, grouped by tvseason when applicable
+      description: >-
+        For the given account and device, returns available watch options grouped by content catalogs for all available episodes,
+        grouped by TV season, for the requested series ID.
+
+        Episode are grouped by TvSeason.
+
+        See [Watch Options API](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/watch-options/) for more.
+
+        The API returns TvSeason objects for the requested series with embedded episodes and watch options for one or more seasons.
+        TvSeason objects are sorted by `tvSeasonNumber` field in descending order.
+        Episodes are sorted by `tvSeasonEpisodeNumber` field in descending order.
+
+        Any non-seasonal and/or extra content are returned in a TvSeason object marked with `ungroupedSeason=true`.
+        All TV seasons will be returned along with a count of available programs.
+        Optionally, episode watch options can be embedded in the first, last or all tv seasons in the series with ```embedTvSeasonWatchOptions``` query parameter.
+        Episodes can be paginated with `limit` and `offset` query params.
+
+        Special Cases:
+
+        * **Non-Episodic Listings**:
+          Listings are associated with the series instead of episodes.
+          It is a common scenario on daily news shows.
+          Non-episodic watch options is returned at the series level, even when `embedSeasonWatchOptions=None`
+          See [example](https://internal-xvp-docs-staging.r53.aae.comcast.net/APIs/Discovery/APIs/Watch%20Options/use-cases/series-non-episodic/)
+        * *Non-Seasonal Episodes**:
+          Episodes that do not carry season information.
+          This is how additional content and extras are modeled. Some news and sports shows are also modeled like that.
+          May occur by itself (news and sports shows) or in conjunction with seasonal content - such as in the case of extras and additional content.
+          See [example](https://internal-xvp-docs-staging.r53.aae.comcast.net/APIs/Discovery/APIs/Watch%20Options/use-cases/series-non-seasonal/)
+
+        **Cache Policy:** xrn:cache:policy:disco:watchOptions
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsSeriesId'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsContentCatalogTypes'
+        - $ref: 'parameters.yml#/components/parameters/EmbedSeasonWatchOptions'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsVideoFormat'
+        - $ref: 'components-vod-livod.yml#/components/parameters/IncludeOutOfWindowLivod'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsInclude'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsTvSeriesResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/WatchOptionsNotFound'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/WatchOptionsBadGateway'
+        503:
+          $ref: 'responses.yml#/components/responses/ServiceUnavailable'
+
+  '/v1/partners/{partnerId}/entity/seriesMaster/{entityId}/tvSeason/{tvSeasonNumber}/watchOptions':
+    get:
+      deprecated: true
+      tags:
+        - Watch Options
+      summary: Returns watch options for a single tvseason for the content catalogs requested
+      description: >-
+        For the given account and device, returns watch options grouped by content catalogs for all episodes, filtered for
+        the TV season specified in the `tvSeasonNumber` path parameter for the requested series ID.
+        Episodes are sorted by `tvSeasonEpisodeNumber` field in descending order.
+        This API does not support non-seasonal or non-episodic content. Only seasonal/episodic content of the tv season specified in the request will be returned.
+
+        See [Watch Options API](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/watch-options/) for more.
+
+        **Cache Policy:** xrn:cache:policy:disco:watchOptions
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsSeriesId'
+        - in: path
+          name: tvSeasonNumber
+          description: filter series watch options by season number
+          required: true
+          schema:
+            type: integer
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsContentCatalogTypes'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsVideoFormat'
+        - $ref: 'components-vod-livod.yml#/components/parameters/IncludeOutOfWindowLivod'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsInclude'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsTvSeasonResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/WatchOptionsNotFound'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/WatchOptionsBadGateway'
+        503:
+          $ref: 'responses.yml#/components/responses/ServiceUnavailable'
+
+  '/v1/partners/{partnerId}/entity/seriesMaster/{entityId}/tvSeason/ungrouped/watchOptions':
+    get:
+      deprecated: true
+      tags:
+        - Watch Options
+      summary: Returns non-seasonal watch options associated with the tv series
+      description: >-
+        For the given account and device, returns available non-seasonal watch options grouped by content catalogs for the requested series ID.
+        Non-seasonal content are episodes that are not associated with a tv season, such as specials or some news shows that are purely non-seasonal.
+        This API does not support non-episodic watch options.
+
+        See [Watch Options API](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/watch-options/) for more.
+
+        **Cache Policy:** xrn:cache:policy:disco:watchOptions
+      parameters:
+        - in: path
+          name: entityId
+          description:  merlin entity Id
+          required: true
+          schema:
+            type: string
+          examples:
+            RachelMaddowShow:
+              summary: The Rachel Maddow Show, all non-seasonal episodes
+              value: '5120784063126795112'
+            SpongeBobSquarePants:
+              summary: SpongeBob Square Pants Series, seasonal and non-seasonal episodes
+              value: '8222051132772877112'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsContentCatalogTypes'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsVideoFormat'
+        - $ref: 'components-vod-livod.yml#/components/parameters/IncludeOutOfWindowLivod'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsInclude'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsUngroupedResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/WatchOptionsNotFound'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/WatchOptionsBadGateway'
+        503:
+          $ref: 'responses.yml#/components/responses/ServiceUnavailable'
+
+
+  # Metadata
+
+  '/v1/partners/{partnerId}/entities/program/{entityId}':   
+    get:
+      tags:
+        - Metadata
+      summary: Retrieve the metadata for a specific program
+      description: >-
+        Retrieves the metadata for a specific program.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-metadata.yml#/components/schemas/ProgramResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+   
+
+  '/v1/partners/{partnerId}/entities/program/{entityId}/reviews':
+    get:
+      tags:
+        - Metadata
+      summary: Retrieve the reviews for the given program
+      description: >-
+        Retrieves the reviews for a given program.
+
+        A client can filter to only get a subset of reviews by either CSM or RT.
+
+        An empty list "of reviews" is returned if no reviews exist but the program is valid.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+        - $ref: 'api-discovery.yml#/components/parameters/ReviewsProvider'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/ReviewsResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/entity/seriesMaster/{entityId}':
+    get:
+      deprecated: true
+      tags:
+        - Metadata
+      summary: Retrieve the metadata for a specific program
+      description: >-
+        Retrieves the metadata for a specific program.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-metadata.yml#/components/schemas/ProgramResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway' 
+
+  '/v1/partners/{partnerId}/entity/seriesMaster/{entityId}/reviews':
+    get:
+      deprecated: true
+      tags:
+        - Metadata
+      summary: Retrieve the reviews for the given seriesMaster
+      description: >-
+        Retrieves the reviews for a given series master. This does not include its episodes though.
+
+        A client can filter to only get a subset of reviews by either CSM or RT.
+
+        An empty list "of reviews" is returned if no reviews exist but the program is valid.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+        - $ref: 'api-discovery.yml#/components/parameters/ReviewsProvider'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/ReviewsResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BrowseBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BrowseBadGateway'
+
+  '/v1/partners/{partnerId}/entities/tvSeason/{entityId}':
+    get:
+      tags:
+        - Metadata
+      summary: Retrieve the metadata for a specific TV season
+      description: >-
+        Retrieves the metadata for a specific TV season.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-metadata.yml#/components/schemas/TvSeasonResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/entities/sportsTeam/{entityId}':
+    get:
+      tags:
+        - Metadata
+      summary: Retrieve the metadata for a specific Team
+      description: >-
+        Retrieves the metadata for a specific Team.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-metadata.yml#/components/schemas/SportsTeamResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/entities/person/{entityId}':
+    get:
+      tags:
+        - Metadata
+      summary: Retrieve the metadata for a specific Person
+      description: >-
+        Retrieves the metadata for a specific Person.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/EntityIdPath'
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'schemas-metadata.yml#/components/schemas/PersonResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/ids/externalIds':
+    post:
+      tags:
+        - Metadata
+      summary: Converts OTT Entity IDs into Merlin IDs.
+      description: |
+        Accepts a list of `externalEntityIds` (OTT entity IDs) as well as the associated `durableAppId`.
+        Returns a list of the corresponding/mapped Merlin IDs.
+        Partner ID is required by XVP for SAT token validation, but it is not used by the API when computing results.
+        Since Merlin IDs may vary by territory, there may be more than one Merlin ID for any given OTT ID.
+        To narrow down results to a single Merlin ID, territory must be provided.
+        Territory is a 2 letter code defined in ISO-3166-2 standards.
+        IDs in the response must be deduplicated.
+        If the same OTT ID is requested more than once within a request, the response will only contain a single copy of it.
+        If for a given OTT ID, Merlin IDs should not appear more than once.
+        All requested IDs should appear in the response once - even if not mapped to any Merlin IDs.
+        If the API fails to convert the OTT ID to a Merlin ID, it should still return the requested OTT ID mapped to an empty array of Merlin IDs.
+        The API will not retain the order of entity IDs in the request and no particular order is enforced for results.
+
+        Only Netflix and Vudu Program IDs are supported at this time.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters.yml#/components/parameters/Territory'
+      requestBody:
+        description: The JSON object containing ID mappings information.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                externalEntityIds:
+                  description: |
+                    List of OTT entity IDs to map to Merlin IDs.
+                  type: array
+                  items:
+                    type: string
+                  example: ['CXpH8BEjr6IazDs4AN4Tiw==', 'gO2/81CpljIHH/S95PEPyA==', 'eozVKK/ZRDpfMsdtsMC4zw==']
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  durableAppId:
+                    $ref: 'components-vod-ott.yml#/components/schemas/DurableAppId'
+                  territory:
+                    description: |
+                      Indicates the territory that must be used to compute results.
+                      Territory is a 2 letter code defined in ISO-3166-2 standards.
+                    type: string
+                    example: 'GB'
+                  partnerId:
+                    type: string
+                    description: |
+                      The partner ID included in the request.
+                      Used for SAT token validation, but not taken into account when computing results.
+                  idMappings:
+                    type: array
+                    description: The resulting set of Merlin IDs.
+                    items:
+                      type: object
+                      properties:
+                        externalEntityId:
+                          type: string
+                          description: The external entity used to resolve the list of Merlin URN's
+                          example: 'CXpH8BEjr6IazDs4AN4Tiw=='
+                        entityIds:
+                          description: The list of associated Merlin IDs resolved from the originating externalEntityId
+                          type: array
+                          items:
+                            type: string
+                          example: ['9048285229564193112', '7360242413397456112', '5747354699365062112']
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/NotFound'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'          
+
+
+  # Browse
+
+  '/v1/partners/{partnerId}/programs':
+    get:
+      tags:
+        - Browse
+      summary: Browse programs over linear and vod catalogs applying filters, sorts and personalization.
+      description: >-
+        XVP Browse Programs API allows clients to discover Program entities that
+        satisfy given search criteria over linear, VOD, liVOD, locker and offer catalogs.
+
+        Notes:
+
+        * Browse APIs are not aware of PPV VOD due to their lack of Content Availability - regardless of whether locker
+        catalog is included in the request. Only PPV listings and offers will surface in Browse.
+        The ONLY XVP Discovery API aware of PPV VOD is Watch Options.
+
+        * Browse APIs are aware of rentals but not aware of rented VOD.
+
+        **Cache Policy:** xrn:cache:policy:disco:browse
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseContentCatalogTypes'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/NumShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumLinearShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumVodShowings'
+
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/LimitEpisode'
+        - $ref: 'parameters.yml#/components/parameters/OffsetEpisode'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+        - $ref: 'parameters-browse.yml#/components/parameters/FacetField'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseInclude'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredVideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EntitySort'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeSort'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodShowingsSort'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodShowingsSort'
+        - $ref: 'parameters-browse.yml#/components/parameters/LinearShowingsSort'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters-browse.yml#/components/parameters/F2mSample'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/DisableEpisodeEntityTag'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSap'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsClosedCaption'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsDownloadable'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsNew'
+        - $ref: 'parameters-browse.yml#/components/parameters/AiringType'
+        - $ref: 'parameters-browse.yml#/components/parameters/VideoFormat'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/TvSeasonNumber'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyTypeTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProviderCompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/DistributorCompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProviderDisplayCode'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/DvsLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/ClosedCaptionLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/AudioTrackLanguage'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/Rating'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubjectToBlackout'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/OfferType'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/LicenseStartVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/LicenseEndVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/WindowStart'
+        - $ref: 'parameters-browse.yml#/components/parameters/WindowEnd'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/PersonId'
+        - $ref: 'parameters-browse.yml#/components/parameters/TeamId'
+        - $ref: 'parameters-browse.yml#/components/parameters/LeagueId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ParentId'
+        - $ref: 'parameters-browse.yml#/components/parameters/RelatedPersonByTeam'
+        - $ref: 'parameters-browse.yml#/components/parameters/RelatedTeamByPerson'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/TitleStart'
+        - $ref: 'parameters-browse.yml#/components/parameters/ReleaseYear'
+        - $ref: 'parameters-browse.yml#/components/parameters/RottenTomatoesCriticScore'
+        - $ref: 'parameters-browse.yml#/components/parameters/RottenTomatoesFanScore'
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseProgramId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProgramType'
+        - $ref: 'parameters-browse.yml#/components/parameters/Language'
+        - $ref: 'parameters-browse.yml#/components/parameters/TvRating'
+        - $ref: 'parameters-browse.yml#/components/parameters/MpaaRating'
+        - $ref: 'parameters-browse.yml#/components/parameters/StarRating'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/CollectionId'
+        - $ref: 'parameters-browse.yml#/components/parameters/NonCollection'
+        - $ref: 'parameters-browse.yml#/components/parameters/CollectionRandomizeTopN'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/Watched'
+        - $ref: 'parameters-browse.yml#/components/parameters/Favorite'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeOnlyCredit'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityIdOperator'
+        - $ref: 'parameters-browse.yml#/components/parameters/Duration'
+
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/BrowseResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BrowseBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        502:
+          $ref: 'responses.yml#/components/responses/BrowseBadGateway'
+
+  '/v1/partners/{partnerId}/programs/{programId}/watchOptions':
+    get:
+      tags:
+        - Browse
+      summary: Returns watch options for a program for the content catalogs requested
+      description: |
+        For the requested program, returns program metadata as well as available watch options grouped by content catalogs
+        for the account and device IDs in context.
+
+        The API response follows the Browse data model, returning a single program at the root level.
+
+        * `entityField` parameter controls program metadata
+        * `facetField` support providerCompanies and linearCompanies. Other values can be added upon request.
+
+        If the program is `programType=SeriesMaster`, an array of nested episodes can be included in the response.
+
+        * `episodeLimit` and `episodeOffset` parameter controls paging of episodes
+        * `episodeField` parameter controls episode metadata
+        * `episodeSort` parameter controls sorting of episodes and seasons in ascending/descending order.
+
+        Episodes are not nested under TV Season objects.
+        TV Seasons are served separately, in its own array.
+
+        * `entityField=tvSeason` includes the array in the response
+        * `tvSeasonNumber` filters TV seasons and episodes by `tvSeasonNumber` field.
+          * **[TBD]** ungrouped episodes use case - tvSeasonNumber=NOT *
+        * **[TBD]** `seasonFacets` will provide a count of programs, vod, linear, preorder, buy, ppv in each TvSeason object
+
+        Programs, nested Episodes and TV Seasons support a `WatchOptions` object.
+
+        * `linearShowingsSort` sorts linear showings only - sorting not supported for VOD or Offers
+        * `numVodShowings` and `numLinearShowings` - limit not supported for Offers
+        * a number of showing filters are supported.
+
+        Watch Options differ from Browse Showings as follows:
+
+        * Grouped by content catalogs
+        * VOD & Offer metadata are enriched and support trailers
+        * Supports all transactional offers - including preorder and ppv
+        * Locker content is included by default - no optional/dedicated catalog.
+
+        Partner-configured rules
+
+        * parameter overrides in support of tag-driven sorting
+
+        Bundles are returned at the program level.
+        Be aware the same offer will appear for each program included in the bundle.
+
+        #### Notes:
+        * XVP no longer assigns episodes to seasons
+        * `embedSeasonWatchOptions` is no longer supported
+        * `include=featureAsset` is no longer supported
+        * `seasonSummary` is replaced by `seasonFacets`, computed by REX, and only supports counts of programs, listings and vods - offers are dropped
+          * **[TBD]** seasonFacets must not change if episodeLimit=0
+        * ungrouped episodes use case no longer supported as a standalone request, needs to be
+        * `tvSeasonFacets` served by REX, VOD & Offers served by NGP
+        * align on `programId` and `programUrn` and drop `entityId` and `entityUrn` - TBD
+        * fix mapping of entityField from seasons to tvSeasons
+        * **[TBD]** numShowings=0,1, 2,..all
+          * vod & linear showings, but not supported for offers
+          * numVodShowings implemented in XVP
+
+        See [Watch Options API](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/watch-options/) for more.
+
+        **Cache Policy:** xrn:cache:policy:disco:watchOptions
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsFullProgramId'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsContentCatalogTypes'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsInclude'
+
+        # Program
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        # season level facets will be defined in XVP-4187
+        - $ref: 'parameters-browse.yml#/components/parameters/FacetField'
+
+        # Episode
+        - $ref: 'parameters.yml#/components/parameters/LimitEpisode'
+        - $ref: 'parameters.yml#/components/parameters/OffsetEpisode'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeField'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeSort'
+
+        # TV Season
+        - $ref: 'parameters-browse.yml#/components/parameters/TvSeasonNumber'
+
+        # Showing Filters
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters.yml#/components/parameters/WatchOptionsVideoFormat'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/LinearShowingsSort'
+        - $ref: 'components-vod-livod.yml#/components/parameters/IncludeOutOfWindowLivod'
+        - $ref: 'parameters-browse.yml#/components/parameters/AiringType'
+
+        # Linear Filters
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsRestartable'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+
+        # VOD Filters
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+
+        # Other
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/WatchOptionsResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        404:
+          $ref: 'responses.yml#/components/responses/WatchOptionsNotFound'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/WatchOptionsBadGateway'
+        503:
+          $ref: 'responses.yml#/components/responses/ServiceUnavailable'
+
+  '/v1/partners/{partnerId}/apps':
+    get:
+      tags:
+        - Browse
+      operationId: browseApps
+      summary: Browse apps catalog based on user's available OTT catalog sources.
+      description: |
+        XVP Browse Apps API allows clients to discover Apps based on availability groups assigned to the user under the "app" scope.
+        Availabiltiy groups are primarily used to editorialize rails.
+        Only apps with available releases will be returned.
+
+        Apps can be filtered by tag ID - for genre based filtering for example, such as Games, Health, etc.
+        Other filters also supported, such as appId or durableAppId.
+
+        AppReleaseField is always returned by default, but if not explicitly requested through `appField` parameter, only AppReleaseFieldId is populated.
+
+        This API provides no support for Network Group companies and no support for expanding company metadata.
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/AppContentCatalogTypes'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/AppId'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/EntityTag'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/AppField'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/AppReleaseField'
+        - $ref: 'parameters-browse-app.yml#/components/parameters/EntitySort'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/BrowseAppResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BrowseBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        502:
+          $ref: 'responses.yml#/components/responses/BrowseBadGateway'
+
+
+  # Recommenders
+
+  '/v1/partners/{partnerId}/programs/peopleAlsoWatched':
+    get:
+      tags:
+        - Recommenders
+      summary: Browse programs over linear and vod catalogs applying filters, sorts and personalization.
+      description: >-
+        For a given program ID (pawId parameter), this API serves content watched by other users who also watched the program associated with the programId in the request.
+        The content served is referred to as "People Also Watched (PAW)" (formerly "More Like This (MOLT)).
+
+        This API aligns with Browse interface - filters have been limited for simplicity, but other Browse filters can be exposed upon request.
+        For linear catalog only the programs that are getting aired within next 14 days are indexed and returned.
+
+        **Cache Policy:** xrn:cache:policy:disco:molt
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseContentCatalogTypes'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProgramType'
+        - $ref: 'parameters-browse.yml#/components/parameters/PawProgramId'
+        - $ref: 'parameters-browse.yml#/components/parameters/UsePawSeed'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseInclude'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumLinearShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumVodShowings'
+
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/LimitEpisode'
+        - $ref: 'parameters.yml#/components/parameters/OffsetEpisode'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+        - $ref: 'parameters-browse.yml#/components/parameters/FacetField'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/VodShowingsSort'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodShowingsSort'
+        - $ref: 'parameters-browse.yml#/components/parameters/LinearShowingsSort'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/VideoFormat'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProviderCompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/DistributorCompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/Rating'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/OfferType'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredVideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/BrowseResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BrowseBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        502:
+          $ref: 'responses.yml#/components/responses/BrowseBadGateway'
+
+
+  # Search
+
+  '/v1/partners/{partnerId}/entities/byId':
+    post:
+      tags:
+        - Search
+      operationId: searchEntities
+      summary: Performs basic availability check on the Merlin entity IDs accepted in the body of the request.
+      description: |
+        Performs basic availability check on the Merlin entity IDs accepted in the body of the request.
+        Searches through a number of Merlin entity types across selected content catalogs matching on `entityId` field.
+
+        Serves entity level results.
+        May also serve a single episode with a linear showing `firstAiring=true` - the first airing listing only.
+
+        Filters based on entity type and/or content catalogs - vod, linear, livod, locker and offers.
+
+        Supports [computing exclusivity](/Architecture/Solutions/Content/Discovery/exclusivity/).
+        Be aware that exclusivity is computed within the context of the request - if any filters applied, may yield false positives.
+
+        Does not support entitlement checks.
+
+        Results are sorted by relevance in descending order.
+
+        **[TBD]**
+
+        * Cache Profiles not currently supported.
+        * Support for PPV
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters-search.yml#/components/parameters/SearchContentCatalogTypes'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchEntityType'
+        - $ref: 'parameters-search.yml#/components/parameters/ComputeExclusivity'
+        - $ref: 'parameters-search.yml#/components/parameters/ExcludeVodOnlyCompany'
+        - $ref: 'parameters-search.yml#/components/parameters/FirstAiringOff'
+
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ChannelField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchLimit'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      requestBody:
+        description: The JSON object containing list of Merlin entity IDs to check.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+            example: [ '4718778859009633112','9199825231698251111','4870894978108039119']
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/SearchResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/SearchBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        502:
+          $ref: 'responses.yml#/components/responses/SearchBadGateway'
+
+  '/v1/partners/{partnerId}/entities/byText':
+    get:
+      tags:
+        - Search
+      operationId: searchEntitiesByText
+      summary: Performs basic text based (alpha) search and returns entities of one or more types
+      description: |
+        Searches for the value of input `query` parameter through a number of Merlin entity types across selected content catalogs matching on names and titles.
+
+        At this time this API only supports alpha searches. T9 support will be added at a later date.
+
+        Content Availability is resolved based on the ARS blob in context.
+
+        Serves entity level results.
+        May also serve a single episode with a linear showing `firstAiring=true` - the first airing listing only.
+
+        Provides optional query params to filter the result by catalog types, offers, entity types, program types, kids friendly, airing type (for linear) and video formats.
+        Content catalogs currently supported by this API are vod, linear, livod, locker and offers.
+
+        Results are sorted by relevance in descending order.
+
+        **Cache Policy:** xrn:cache:policy:disco:textSearch
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - in: query
+          name: query
+          description: >-
+            The actual text search query.
+          example: game of thrones
+          required: true
+          schema:
+            type: string
+        - $ref: 'parameters-search.yml#/components/parameters/SearchContentCatalogTypes'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchEntityType'
+        - $ref: 'parameters-search.yml#/components/parameters/ExcludeVodOnlyCompany'
+
+        - $ref: 'parameters-search.yml#/components/parameters/SearchAiringType'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/OfferType'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeLinear'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeVod'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeLiVod'
+
+        - $ref: 'parameters-search.yml#/components/parameters/ComputeExclusivity'
+        - $ref: 'parameters-search.yml#/components/parameters/FirstAiringOff'
+        - $ref: 'parameters-search.yml#/components/parameters/EnablePartyMode'
+        - $ref: 'parameters-search.yml#/components/parameters/EnableFuzzyMatch'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ChannelField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchLimit'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/SearchResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/SearchBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        502:
+          $ref: 'responses.yml#/components/responses/SearchBadGateway'
+
+  '/v1/partners/{partnerId}/search/byText':
+    get:
+      deprecated: true
+      tags:
+        - Search
+      summary: Performs basic text based (alpha) search and returns entities of one or more types
+      description: |
+        Searches for the value of input `query` parameter through a number of Merlin entity types across selected content catalogs matching on names and titles.
+
+        At this time this API only supports alpha searches. T9 support will be added at a later date.
+
+        Content Availability is resolved based on the ARS blob in context.
+
+        Provides optional query params to filter the result by catalog types, offers, entity types, program types, kids friendly, airing type (for linear) and video formats.
+        Content catalogs currently supported by this API are vod, linear, livod, locker and offers.
+
+        Results are sorted by relevance in descending order.
+
+        **Cache Policy:** xrn:cache:policy:disco:textSearch
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - in: query
+          name: query
+          description: >-
+            The actual text search query.
+          example: game of thrones
+          required: true
+          schema:
+            type: string
+        - $ref: 'parameters-search.yml#/components/parameters/SearchContentCatalogTypes'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchEntityType'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchAiringType'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/LivodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/OfferType'
+        - $ref: 'parameters-search.yml#/components/parameters/IncludeVodOnlyCompany'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'parameters-search.yml#/components/parameters/EnablePartyMode'
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeLinear'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeVod'
+        - $ref: 'parameters-search.yml#/components/parameters/FreeToMeLiVod'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchMatchChannelNumber'
+        - $ref: 'parameters-search.yml#/components/parameters/EnableFuzzyMatch'
+        - $ref: 'parameters-search.yml#/components/parameters/SearchLimit'
+        - $ref: 'parameters.yml#/components/parameters/CacheKey'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/SearchResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/SearchBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        409:
+          $ref: 'responses.yml#/components/responses/Conflict'
+        502:
+          $ref: 'responses.yml#/components/responses/SearchBadGateway'
+
+
+  # Personalization
+
+  '/v1/partners/{partnerId}/programs/personalizedLists':
+    get:
+      tags:
+        - Personalization
+      summary: 'Browse through contents of personalized lists.'
+      description: |
+        Displays programs user has added to its Playlist.
+
+        Rolls up episodic content into its series and only returns entity level information.
+
+        Supports general Browse filtering capabilities.
+
+        Results are considered personalized.
+        Does not support availability profiles.
+
+        See [Personalized Lists](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/playlist/#personalized-list) for more.
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters.yml#/components/parameters/ListTypeRequired'
+        - $ref: 'parameters.yml#/components/parameters/OwnerRequired'
+        - $ref: 'parameters.yml#/components/parameters/PersonalizedListsEntitySort'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProgramType'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredVideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/Rating'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/PersonalizedListsResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/programs/personalizedLists/playNow':
+    get:
+      tags:
+        - Personalization
+      summary: 'Browse through contents of personalized lists that can be played now.'
+      description: |
+        Recommends programs from user's playlist as well as watch history, sorted by most recent availability.
+
+        Returns single programs or episodic content along with watchable "Best Ways to Watch" (freeToMe).
+        Fully watched programs will be filtered out from results.
+
+        Supports limited Browse filtering capabilities.
+
+        Results are considered personalized.
+        Does not support availability profiles.
+
+        Use Cases:
+
+        * Added to playlist
+        * New episode available - previously added
+        * New season available - previously added
+        * Continue watching - part watched or next episode
+
+        See [Personalized Lists](https://internal-xvp-docs-staging.r53.aae.comcast.net/Architecture/Solutions/Content/Discovery/playlist/#personalized-list) for more.
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/ListTypeRequired'
+        - $ref: 'parameters.yml#/components/parameters/OwnerRequired'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredVideoQuality'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseInclude'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/PlayNowResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/programs/sortAll':
+    post:
+      tags:
+        - Personalization
+      summary: Personalized sorting of lists programs by ID
+      description: >-
+        Accepts a map of keys (string) and values (lists) pairs where the keys are labels of the lists of program IDs to
+        be sorted by XVP Personalization Page Optimization Service.
+        Supports sorting of Movies, SeriesMaster and Episodes - however episodes will be ranked based on its SeriesMaster position
+        only - not ranked related to each other.
+        When episodes are present in the input, they are rolled up to the series, sorted, then rolled back into episodes.
+
+        **Note:** that today the API does an availability check on the programs sorted -
+        unavailable programs will be dropped from the response.
+
+        In the near future we would like to evolve the API and optionally support availability checks
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SortAllRequestBody'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SortAllResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+  '/v1/partners/{partnerId}/programs/becauseYouWatched':
+    get:
+      tags:
+        - Personalization
+      summary: Personalized recommendation of programs based on watch history
+      description: |
+        Content Discovery's Because You Watched endpoint selects a number of programs from user's watch history and computes recommendations from each.
+        This API can be used to populate multiple "Because You Watched" rails. - clients can use the `limit` parameter to control how many watched programs will be used to compute results.
+
+        The API will only recommend from available programs and supports a number of filters on both watched programs and their related recommendations.
+
+        **Note:** Today the API will recommend programs based on their availability.
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/RecommendedLimit'
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseContentCatalogTypes'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProgramType'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/DisableEpisodeEntityTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BecauseYouWatchedResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'          
+
+  '/v1/partners/{partnerId}/programs/nextEpisode':
+    get:
+      tags:
+        - Personalization
+      summary: Personalized recommendation of the next episode for the requested series or episode ID, for the requested account or device.
+      description: >-
+        This api will take user's account and device ids, along with a list of program ids (series or episode) and determine for each program what is the 'Next Episode' available for the user to watch.
+        Next episode can be defined based on different criteria and clients can choose the criteria to apply to the request. Supported criterias are:
+
+        * `first`:
+          If requested program is a series ID, it returns the pilot episode, if available.
+          If requested program is an episode ID, it returns the next available episode in sequence.
+        * `latest:` returns most recently aired episode for the series that is available. Does not take user history into account.
+        * `random:` returns a randomly selected episode for the series based on the filters and account context passed in the request.
+        * `personalized:` instructs the API to take the user history into consideration when calculating next episode.
+
+        User history is determined from the user's 'Resume Points' from VOD and DVR, the user's 'Watched Programs', and the availability of the determined 'next episode'.
+        It returns either a partially watched episode or the next episode after the last fully watched episode. For example:
+        If a subscriber has fully watched an asset on vod or dvr, the API will return the next episode in that series.
+        If a subscriber has a resume point for a particular episode, the API will return that episode as the next episode to watch in the series (i.e the episode was not fully watched).
+
+        If there is no program available that satisfies the condition specified in the request, the API will return an empty list -
+        clients can control whether to ignore availability when calculating the next episode by using the `ignoreAvailability` parameter.
+        In this case the logical next episode would return even if there are no showings available to watch.
+        Similarly, if the programId in the request is of a non-episodic program - movie for example - the API will also return en empty list.
+
+        Next episode could be available on vod or linear catalogs.
+
+        Special Cases:
+
+        * If a series doesn't have seasons, the next episode is defined as the episode with the next Original Airdate.
+        * If next episode is a multi part episodes, the API prioritizes full episodes - part 1 and part 2 are combined into single double duration episode in data. If input episode is part 1, the api will look for part 2. If input episode is full, look for next full episode first, if not then look for part 1.
+
+        Not all program and showing attributes are returned by default.
+        Optional fields must be explicitly requested through `entityField`, `episodeField`, `showingField`, `facetField` query parameters
+
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseContentCatalogTypes'
+
+        - $ref: 'parameters.yml#/components/parameters/NextEpisodeProgramId'
+        - $ref: 'parameters.yml#/components/parameters/NextEpisodeCriteria'
+        - $ref: 'parameters.yml#/components/parameters/NextEpisodeIgnoreAvailability'
+        - $ref: 'parameters.yml#/components/parameters/NextEpisodeIncludeTodaysEpisode'
+
+        - $ref: 'components-audience.yml#/components/parameters/Adult'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/Rating'
+        - $ref: 'parameters-browse.yml#/components/parameters/Language'
+        - $ref: 'parameters-browse.yml#/components/parameters/Watched'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/AiringType'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsClosedCaption'
+        - $ref: 'parameters-browse.yml#/components/parameters/ColorDepth'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyTypeTag'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsDownloadable'
+        - $ref: 'parameters-browse.yml#/components/parameters/HasDvs'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsIVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsNew'
+        - $ref: 'parameters-browse.yml#/components/parameters/ProviderCompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSap'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubjectToBlackout'
+        - $ref: 'parameters-browse.yml#/components/parameters/IsSubtitled'
+        - $ref: 'parameters-browse.yml#/components/parameters/VideoFormat'
+        - $ref: 'parameters-search.yml#/components/parameters/VideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/VodType'
+        - $ref: 'parameters-browse.yml#/components/parameters/OnNow'
+        - $ref: 'parameters-browse.yml#/components/parameters/Upcoming'
+        - $ref: 'parameters-browse.yml#/components/parameters/StationId'
+        - $ref: 'parameters-browse.yml#/components/parameters/WindowStart'
+        - $ref: 'parameters-browse.yml#/components/parameters/WindowEnd'
+        - $ref: 'parameters-browse.yml#/components/parameters/LicenseStartVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/LicenseEndVod'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredVideoQuality'
+        - $ref: 'parameters-browse.yml#/components/parameters/PreferredLanguage'
+        - $ref: 'components-vod-ott.yml#/components/parameters/DurableAppId'
+        - $ref: 'parameters-browse.yml#/components/parameters/BrowseInclude'
+
+        # sorts
+        - $ref: 'parameters-browse.yml#/components/parameters/EntitySort'
+        - $ref: 'parameters-browse.yml#/components/parameters/LinearShowingsSort'
+
+        # fields
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/EpisodeField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+
+        # number of showings
+        - $ref: 'parameters-browse.yml#/components/parameters/NumShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumLinearShowings'
+        - $ref: 'parameters-browse.yml#/components/parameters/NumVodShowings'
+
+        # pagination
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/UseCase'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'api-discovery.yml#/components/schemas/BrowseResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/NextEpisodeBadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        502:
+          $ref: 'responses.yml#/components/responses/NextEpisodeBadGateway'
+
+  '/v1/partners/{partnerId}/programs/latestTv':
+    get:
+      tags:
+        - Recommenders
+      summary: Recommends the most popular programs that recently aired on live TV (linear), available on demand (VOD).
+      description: >-
+        Popularity is computed on Sky linear viewing over a 24-hour span - "Last Night's TV" by popularity.
+        Actual start and end times can be configurable.
+
+        Recommendations are driven by current VOD availability of the most popular programs; the companyId of the linear
+        program is not taken into account, so it's possible that a VOD asset recommended here is from a different provider
+        than the provider that aired it the night before.
+
+        Supports configurable exclusion of OTT app content from recommendations, by partner.
+
+        Returns an array of programs that aired last nigh with some added series metadata along with VOD showings.
+        Supports field filtering.
+
+        Recommendations are only computed based on Sky viewing data.
+      parameters:
+        - $ref: 'parameters.yml#/components/parameters/PartnerIdPath'
+        - $ref: 'parameters.yml#/components/parameters/AccountId'
+        - $ref: 'parameters.yml#/components/parameters/DeviceId'
+        - $ref: 'parameters.yml#/components/parameters/ClientId'
+        - $ref: 'parameters.yml#/components/parameters/Offset'
+        - $ref: 'parameters.yml#/components/parameters/Limit'
+        - $ref: 'parameters.yml#/components/parameters/MaxResults'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/FreeToMe'
+        - $ref: 'parameters-browse.yml#/components/parameters/CompanyId'
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityTag'
+
+        # fields
+        - $ref: 'parameters-browse.yml#/components/parameters/EntityField'
+        - $ref: 'parameters-browse.yml#/components/parameters/ShowingField'
+
+        - $ref: 'parameters-browse.yml#/components/parameters/NumShowings'
+        - $ref: 'parameters-latest-tv.yml#/components/parameters/LatestTvInclude'
+
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LatestTvResponse'
+        400:
+          $ref: 'responses.yml#/components/responses/BadRequest'
+        401:
+          $ref: 'responses.yml#/components/responses/Unauthorized'
+        403:
+          $ref: 'responses.yml#/components/responses/Forbidden'
+        500:
+          $ref: 'responses.yml#/components/responses/InternalServerError'
+        502:
+          $ref: 'responses.yml#/components/responses/BadGateway'
+
+components:
+
+  parameters:
+
+    ReviewsProvider:
+      in: query
+      name: provider
+      description: >-
+        Limits the reviews to only the specified provider. If none is provided, all reviews are returned.
+        
+        * `CSM`: Includes the reviews from the Common Sense Media for the given entity
+
+        * `RT`: includes the reviews from Rotten Tomatoes for the given entity
+      schema:
+        type: array
+        items:
+          type: string
+          enum: ['CSM', 'RT']
+
+  schemas:
+
+    # Search
+
+    SearchResponse:
+      type: object
+      properties:
+        entityCount:
+          type: integer
+          description: the number of search results returned
+        entities:
+          type: array
+          items:
+            $ref: 'schemas-search.yml#/components/schemas/SearchEntity'
+
+    # Review
+
+    ReviewsResponse:
+      description: All the reviews for the requested entity
+      type: object
+      properties:
+        reviews:
+          type: array
+          items:
+            oneOf:
+              - $ref: 'schemas-program-reviews.yml#/components/schemas/ReviewCommonSenseMedia'
+              - $ref: 'schemas-program-reviews.yml#/components/schemas/ReviewRottenTomatoes'
+
+
+    # WatchOptions
+
+    WatchOptionsProgram:
+      $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptions'
+
+    WatchOptionTvSeries:
+      $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsTvSeriesResponse'
+
+    WatchOptionsTvSeason:
+      $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsTvSeasonResponse'
+
+    WatchOptionsUngrouped:
+      $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsUngroupedResponse'
+
+
+    # Browse
+
+    BrowseResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-browse.yml#/components/schemas/BrowseItem'
+
+    WatchOptionsResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-watch-options.yml#/components/schemas/WatchOptionsItem'
+
+    BrowseAppResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-browse-app.yml#/components/schemas/BrowseApp'
+
+
+    # Personalization
+
+    SortAllRequestBody:
+      type: object
+      properties:
+        browseMap:
+          type: object
+          description: >-
+            Dictionary of key/value pairs where:
+
+            * keys represent the name of the list of Merlin program IDs (to be) sorted.
+
+            * values are a the actual list of Merlin program IDs (to be) sorted.
+          additionalProperties:
+            type: array
+          example:
+            collectionName1: [ '8222051132772877112', '8535585090669072112', '6021891675350569112' ]
+            collectionName2: [ '7103256165508658112', '6440918268753874112', '8222051132772877112' ]
+
+    SortAllResponse:
+      type: object
+      properties:
+        browseMap:
+          type: object
+          description: >-
+            Dictionary of key/value pairs where:
+
+            * keys represent the name of the browse items to sort.
+
+            * values are a simple list of sorted Browse program objects containing only the `programId` field.
+          additionalProperties:
+            type: array
+          example:
+            collectionName1: [ '8535585090669072112', '6021891675350569112', '8222051132772877112' ]
+            collectionName2: [ '6440918268753874112', '7103256165508658112', '8222051132772877112' ]
+
+    PersonalizedListsResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-personalization.yml#/components/schemas/PersonalizedListsItem'
+
+    PlayNowResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-personalization.yml#/components/schemas/PlayNowItem'
+
+    BecauseYouWatchedResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-personalization.yml#/components/schemas/BecauseYouWatchedItem'
+
+    LatestTvResponse:
+      type: object
+      properties:
+        itemCount:
+          $ref: 'schemas-browse.yml#/components/schemas/ItemCount'
+        browseItems:
+          type: array
+          items:
+            $ref: 'schemas-personalization.yml#/components/schemas/LatestTvItem'
