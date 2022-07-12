@@ -16,7 +16,7 @@ This is useful in instances where you want to:
 
 -   Checking device property states
 
--   You can check the current state of a property. For instance, using [the Device module](/api/device/) you retrieve how the device is connected to the internet or if it's connected at all.
+-   You can check the current state of a property. For instance, using the [Device module](docs/fireboltAPI/device.md) you retrieve how the device is connected to the internet or if it's connected at all.
 
 -   Receiving property state updates when they change
 
@@ -54,7 +54,7 @@ If you were to run the above, it would look something like this:
 }
 ```
 
-To see the current list of return values for the network method based on the device go to [Device.network](/api/device/#network)
+To see the current list of return values for the network method based on the device go to [Device.network](docs/fireboltAPI/device.md#network)
 
 ## Related Information
 

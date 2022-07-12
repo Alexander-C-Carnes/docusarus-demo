@@ -48,7 +48,7 @@ When your app transitions into a new state, there are some responsibilities it s
 ## Managing your App's Lifecycle
 
 ### Getting your app Ready
-In order to give your app complete control over when it is presented to the user, the platform provides the [`Lifecycle.ready()`](/api/lifecycle/#ready) method. This allows the platform to wait for your app to be functionally and visually prepared for the user, and prevents the platform from waiting any longer than necessary.
+In order to give your app complete control over when it is presented to the user, the platform provides the [`Lifecycle.ready()`](docs/fireboltAPI/Lifecycle.md#ready) method. This allows the platform to wait for your app to be functionally and visually prepared for the user, and prevents the platform from waiting any longer than necessary.
 
 This needs to be called before your App can be put into the `foreground`. This must only be called once. If your app is going to respond to any event(s) then it’s a best practice to [`listen()` to those events](./listening-for-events.md) before calling `ready()`.
 
@@ -58,7 +58,7 @@ Your app is ready when these three requirements are met.
 | ------------- | ----------- |
 | Response Time | The time it takes for your app to show a response to a user key-press must be less than 100ms. For example, user selects 'play' and it either starts playing or a 'loading' icon appears within 100ms. |
 | Playback Start | The amount of time between a user requesting playback and the asset starting playback must be less than 3 seconds. |
-| Deep Linking | Your app must support [Deep linking, via Navigation Intents](./deep-linking.md) |
+| Deep Linking | Your app must support [Deep linking, via Navigation Intents](../discovery/deep-linking.md) |
 
 Here is an example that listens for deep links, and then calls `ready()`:
 
@@ -106,7 +106,7 @@ Note that each `if/else` clause is left empty, as you know better what your app 
 ### Closing your App
 Once in a while you will need to close your app, for example the user pressed the `last` remote button at the top of your app UX.
 
-The [`Lifecycle.close()` method](/api/lifecycle/#close) instructs the platform to stop presenting your app to the user. This method has a mandatory `reason` parameter that gives your app a way to influence which state it might be transitioned to.
+The [`Lifecycle.close()` method](docs/fireboltAPI/Lifecycle.md#close) instructs the platform to stop presenting your app to the user. This method has a mandatory `reason` parameter that gives your app a way to influence which state it might be transitioned to.
 
 The platform will make the determination of how it will transition your app and it can be one of four possible transitions –
 
@@ -121,19 +121,19 @@ In order to help the platform determine why your app is requesting to be closed,
 | ------ | ----------- |
 | `userExit` | The User explicitly selected an exit control that is rendered within your App UX. |
 | `remoteButton` | The User pressed the `last` button on their remote from the App’s Home page. |
-| `error` | Your App encountered an unrecoverable error, and needs to be exited. See [`Metrics.error()`](/api/metrics/#error). |
+| `error` | Your App encountered an unrecoverable error, and needs to be exited. See [`Metrics.error()`](docs/fireboltAPI/Metrics.md#error). |
 
 ***Even if your App is closed it may not be unloaded.***
 
 ### Unloading your App
-A User may need more CPU and/or memory, and if your App is not demanded, the platform will send an `unloading` event. When that happens it is strongly recommended that you do any final operations your app needs to do, and then call [`Lifecylce.finished()`](/api/lifecycle/#finished).
+A User may need more CPU and/or memory, and if your App is not demanded, the platform will send an `unloading` event. When that happens it is strongly recommended that you do any final operations your app needs to do, and then call [`Lifecylce.finished()`](docs/fireboltAPI/Lifecycle.md#finished).
 
 After receiving the `unloading` event, your app can handle any Metrics or other clean-up tasks.
 There is a small amount of time that your App can perform these processes, so do them quickly.
 
 It’s also recommended that your app [clear out all Firebolt listeners](./listening-for-events.md#clearing-listeners) during this time.
 
-Once the App has gone through these phases it should call [`Lifecylce.finished()`](/api/lifecycle/#finished).
+Once the App has gone through these phases it should call [`Lifecylce.finished()`](docs/fireboltAPI/lifecycle.md#finished).
 
 This allows the platform to ensure that the device optimizes memory and CPU giving users the best experience available.
 
