@@ -72,7 +72,7 @@ It's assumed that you have PowerShell or Windows' command line as well as permis
 
 **Download Node.js Installer**: In a web browser, put in the URL <https://nodejs.org/en/download/>. Select the **Windows Installer** button to download the latest default version. The Node.js installer includes the NPM package manager.
 
-![Windows Installer Option](./images/WindowsInstallerOption.png)
+![Windows Installer Option](../images/WindowsInstallerOption.png)
 
 ### Step 2: Install Node.js and NPM from Browser:\*
 
@@ -104,7 +104,7 @@ The system should display the Node.js version installed on your system. You can 
 
 **Prerequisites**
 
-Node on Mac can be installed directly from Node.js or it can be installed with tools like [Homebrew](https://brew.sh/). For this installation we're going to keep it as simple as possible and go directly to Node.js. However, you may use a package manager tool such as Homebrew if you prefer.
+Node on Mac can be installed directly from Node.js or it can be installed with tools like [Homebrew](https://brew.sh/). For this installation, we're going to keep it as simple as possible and go directly to Node.js. However, you may use a package manager tool such as Homebrew if you prefer.
 
 It's assumed that you have access to Mac's terminal tool and have permissions to download and install software on your machine.
 
@@ -166,7 +166,7 @@ For developers building \"operator apps\" / \"search and discover apps\" which n
 
     1.  Clone it via GitHub desktop
 
-![clone github repo](./images/clone-github-repo.jpg)
+![clone github repo](../images/clone-github-repo.jpg)
 
 1.  Clone these two repositories using the same method.
 
@@ -187,7 +187,7 @@ The file structure should place the Firebolt® Mock repo alongside the Firebolt�
 2.  Run the one-time install command(s) to clean, create, and build a sub-directory.
 
         npm install
-
+        
         npm run clean
 
     This command will build the Core Firebolt® SDK:
@@ -228,12 +228,12 @@ node cli.mjs --help
 
 | Command                                                      | Intent                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| node cli.mjs --help                                   S      | Use this to pull up the how to use info                      |
-| node cli.mjs --user <userId>  ...(see below)...              | Target the given user; Overrides the .mf.config.json file, if present |
-| node cli.mjs --port 3333 ...(see  below)...                  | If running Mock Firebolt® on a non-standard port              |
+| node cli.mjs --help                                          | Use this to pull up the how to use info                      |
+| node cli.mjs --user `<userId>` ...(see below)...             | Target the given user; Overrides the .mf.config.json file, if present |
+| node cli.mjs --port 3333 ...(see  below)...                  | If running Mock Firebolt® on a non-standard port             |
 | node cli.mjs --quiet ...(see below)...                       | Don't emit command summary text; helpful for exporting state |
-| node cli.mjs --health                                        | Performs health check on Mock Firebolt®                       |
-| node cli.mjs --state                                         | Asks Mock Firebolt® to dump its state; handy for debugging    |
+| node cli.mjs --health                                        | Performs health check on Mock Firebolt®                      |
+| node cli.mjs --state                                         | Asks Mock Firebolt® to dump its state; handy for debugging   |
 | node cli.mjs --revert                                        | Go back to the way things were when server started (w.r.t. state) |
 | node cli.mjs --latency 0                                     | Set min and max latency values to given value                |
 | node cli.mjs --latency 50 --latency  100                     | Set min and max latency values to given values; min 1st, max 2nd |

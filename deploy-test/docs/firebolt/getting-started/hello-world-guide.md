@@ -53,7 +53,7 @@ The *\"Hello World\"* guide is designed with the following assumptions:
 
 After you successfully install Lighting Studio, get Firebolt® up and running, and create your app, at the end of all that your finished app should look something like this:
 
-![Hello World - End State Video](.../images/Hello-World-Video.gif)
+![Hello World - End State Video](../images/Hello-World-Video.gif)
 
 # Installing Node
 
