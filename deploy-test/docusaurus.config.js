@@ -154,17 +154,28 @@ const config = {
           label: 'label',
         },
           {
-            type: 'doc',
-            docId: 'firebolt/getting-started/quick-start-guide',
+            type: 'docSidebar',
             position: 'left',
-            label: 'Documentation',
+            sidebarId: 'fireboltDocs',
+            label: 'Firebolt Documentation',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'api',
+            label: 'Firebolt API',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'xvp',
+            label: 'XVP Documentation',
           },
           {
             position: 'right',
             to: 'signup_page',
             label: 'Login',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
             label: 'GitHub',
@@ -208,6 +219,7 @@ const config = {
               },
             ],
           },
+          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
