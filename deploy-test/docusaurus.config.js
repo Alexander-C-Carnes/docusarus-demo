@@ -70,8 +70,8 @@ const redocusaurus = [
 const config = {
   title: 'RDK Central Test Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
-  baseUrl: '/dousarus-demo/',
+  url: 'https://github.com/Alexander-C-Carnes/docusarus-demo',
+  baseUrl: '/docusarus-demo/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -79,7 +79,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Alexander-C-Carnes', // Usually your GitHub org/user name.
-  projectName: 'dousarus-demo', // Usually your repo name.
+  projectName: 'docusarus-demo', // Usually your repo name.
   deploymentBranch: 'deployment-branch',
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -116,7 +116,7 @@ const config = {
       ({
         docs: {
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/Alexander-C-Carnes/dousarus-demo/edit/main/website/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/Alexander-C-Carnes/docusarus-demo/edit/main/website/${versionDocsDirPath}/${docPath}`,
           editLocalizedFiles: false,
           editCurrentVersion: false,
           routeBasePath: 'docs',
@@ -131,7 +131,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Alexander-C-Carnes/dousarus-demo/tree/development-branch-RDK/my-website',
+            'https://github.com/Alexander-C-Carnes/docusarus-demo/tree/development-branch-RDK/my-website',
         },
         blog: {
           showReadingTime: true,
@@ -195,7 +195,7 @@ const config = {
             label: 'Login',
           },
           {
-            href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
+            href: 'https://github.com/Alexander-C-Carnes/docusarus-demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -278,7 +278,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Alexander-C-Carnes/dousarus-demo',
+                href: 'https://github.com/Alexander-C-Carnes/docusarus-demo',
               },
             ],
           },
