@@ -96,7 +96,18 @@ const config = {
     {
       systemvars: true
     }
-  ]
+  ],
+  [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'RDKDocs',
+        path: 'RDKDocs',
+        routeBasePath: 'RDKDocs',
+        sidebarPath: require.resolve('./sidebarRDK.js'),
+        // ... other options
+        include: ['**/*.md', '**/*.mdx','**/*.js'],
+      },
+    ],
 ],
   presets: [
     [
@@ -109,7 +120,7 @@ const config = {
           editLocalizedFiles: false,
           editCurrentVersion: false,
           routeBasePath: 'docs',
-          include: ['**/*.md', '**/*.mdx'],
+          include: ['**/*.md', '**/*.mdx','**/*.js'],
           exclude: [
             '**/_*.{js,jsx,ts,tsx,md,mdx}',
             '**/_*/**',
@@ -171,6 +182,12 @@ const config = {
             position: 'left',
             sidebarId: 'xvp',
             label: 'XVP Documentation',
+          },
+          {
+            type: 'docsVersion',
+            label: 'RDK Docs',
+            position: 'right',
+            docsPluginId:'RDKDocs',
           },
           {
             position: 'right',
