@@ -1,3 +1,10 @@
+---
+title: Hello World Guide 
+sidebar_position: 2
+---
+
+
+
 # Welcome
 
 In this practical guide, you'll learn how to get up and running so you can build a simple single-page app using Firebolt®. It will show you fundamentals like importing modules and how to use the Device and Lifecycle modules.

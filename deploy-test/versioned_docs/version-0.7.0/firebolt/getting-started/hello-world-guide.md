@@ -1,7 +1,9 @@
 ---
-title: Hello World Guide
+title: Hello World Guide 
 sidebar_position: 2
 ---
+
+
 
 # Welcome
 
@@ -160,7 +162,7 @@ Linux has many options - here is our favorite "How-to guide" on installing Node.
 2. Open your command-line interface (CLI) tool and change your directory to the repo you just cloned.
 
    ```
-   cd pt1-firebolt_hello_world-start
+   cd firebolt-hello-world/pt1-firebolt_hello_world-start
    ```
 
 3. With CLI in the \"hello_world\" directory run the command
@@ -196,7 +198,7 @@ This will build the `package.json` file in the directory and it will then compil
 
 In the file `src/App.js` add the line
 
-```javascript
+```javascript title="src/App.js"
 import { Lifecycle, Device } from '@firebolt-js/sdk';
 ```
 
@@ -208,18 +210,22 @@ This will add the modules **Device** and **Lifecycle** to your app.
 
 Within the *Hello World* repo you downloaded, navigate to and open the `src/App.js` file. Go to the following line within the file:
 
-```javascript
+```javascript title="src/App.js"
 {...
   _active() {
   }
 }
 ```
 
-Note that the `_active()` method is how the Lightning™ framework initiates your app, and is not part of Firebolt®.
+:::info
+
+Note that the `_active()` method is how the Lightning™ framework initiates your app and is not part of Firebolt®.
 
 After `_active() {` here is where you put your Firebolt® code! Add the following Firebolt® code on a new line:
 
-```javascript
+:::
+
+```javascript title="src/App.js"
 Device.distributor()
 .then(distributor => {
   const deviceDistributor = 'distributor:' + distributor;
@@ -261,7 +267,7 @@ For more information on listening to events please reference the API documentati
 
 In your `App.js` file add the following code at the same level as `_active()` and `_init()`
 
-```javascript
+```javascript title="src/App.js"
 _registerLifecycleCallbacks() {
   Lifecycle.listen((event, value) => {
     console.log('Lifecycle.listen:', event, value);
@@ -295,7 +301,7 @@ Using the functions you've added we're going to call `_registerLifecycleCallback
 
 Next, add the following code to the `_active()` function.
 
-```javascript
+```javascript title="src/App.js"
 this._registerLifecycleCallbacks();
 Lifecycle.ready();
 ```

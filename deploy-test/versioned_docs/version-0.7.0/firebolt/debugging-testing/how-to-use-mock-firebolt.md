@@ -74,7 +74,7 @@ It's assumed that you have PowerShell or Windows' command line as well as permis
 
 ![Windows Installer Option](../images/WindowsInstallerOption.png)
 
-### Step 2: Install Node.js and NPM from Browser:
+### Step 2: Install Node.js and NPM from Browser:\*
 
 1.  Once the installer finishes downloading, launch it. Open the **downloads** link in your browser and select the file. Or, browse to the location where you have saved the file and double-click it to launch.
 
@@ -104,7 +104,7 @@ The system should display the Node.js version installed on your system. You can 
 
 **Prerequisites**
 
-Node on Mac can be installed directly from Node.js or it can be installed with tools like [Homebrew](https://brew.sh/). For this installation we're going to keep it as simple as possible and go directly to Node.js. However, you may use a package manager tool such as Homebrew if you prefer.
+Node on Mac can be installed directly from Node.js or it can be installed with tools like [Homebrew](https://brew.sh/). For this installation, we're going to keep it as simple as possible and go directly to Node.js. However, you may use a package manager tool such as Homebrew if you prefer.
 
 It's assumed that you have access to Mac's terminal tool and have permissions to download and install software on your machine.
 

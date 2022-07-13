@@ -9,7 +9,7 @@ As a note, we cannot not render the captions for your app. Your app will need to
 
 
 ## Reading device settings
-In order to access your user's current closed captions settings, your app can call the `Accessibility.closedCaptions()` method from the [Accessibility](/api/accessibility/) API:
+In order to access your user's current closed captions settings, your app can call the `Accessibility.closedCaptions()` method from the [Accessibility](docs/fireboltAPI/accessibility.md) API:
 
 ```javascript 
 import { Accessibility } from '@firebolt-js/sdk'
@@ -19,7 +19,7 @@ const ccSettings = await Accessibility.closedCaptions()
 if (ccSettings.enabled) {
   // the user has captions enabled
 }
-``` 
+```
 
 Additionally, your app should respect your user's current closed-captions styles, which they may have set as their personal preference for readability. Continuing from the previous example, you can access the `styles` property:
 
@@ -28,7 +28,7 @@ Additionally, your app should respect your user's current closed-captions styles
 console.log(ccSettings.styles)
 ```
 
-See the [ClosedCaptionsStyles](/api/accessibility/#closedcaptionsstyles) API for more info on styling properties.
+See the [ClosedCaptionsStyles](/fireboltAPI/accessibility.md#closedcaptionsstyles) API for more info on styling properties.
 
 ## Adapting to real-time changes
 While your app is running, or even while your app is playing content, your user may change the closed captions settings on their device. Your app should promptly respond to this change by listening to all `closedCaptionsSettingsChanged` events:
@@ -69,4 +69,4 @@ Accessibility.listen(`closedCaptionsSettingsChanged`), ccSettings => {
 }
 ```
 
-For more information about this API, visit the [Accessibility](/api/accessibility/) API documentation.
+For more information about this API, visit the [Accessibility](docs/fireboltAPI/accessibility.md) API documentation.
