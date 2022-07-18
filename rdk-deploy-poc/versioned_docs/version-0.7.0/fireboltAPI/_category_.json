@@ -1,0 +1,8 @@
+{
+  "label": "Firebolt Reference API Documentation",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The OpenRPC Reference docs for Firebolt."
+  }
+}

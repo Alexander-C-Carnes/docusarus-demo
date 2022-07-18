@@ -1,0 +1,9 @@
+{
+  "label": "Legal agreements and information",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index"
+  }
+}

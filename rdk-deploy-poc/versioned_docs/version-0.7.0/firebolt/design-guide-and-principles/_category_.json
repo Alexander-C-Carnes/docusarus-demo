@@ -1,0 +1,10 @@
+{
+  "label": "Design Principles and guides",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Design Principles and guides"
+  }
+}

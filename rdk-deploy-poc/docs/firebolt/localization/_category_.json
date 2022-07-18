@@ -1,0 +1,10 @@
+{
+  "label": "Localization and Geofencing",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Localization and Geofencing"
+  }
+}

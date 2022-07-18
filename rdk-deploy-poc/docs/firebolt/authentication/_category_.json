@@ -1,0 +1,10 @@
+{
+  "label": "Authentication",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Authentication"
+  }
+}

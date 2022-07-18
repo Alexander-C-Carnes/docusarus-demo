@@ -30,6 +30,8 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.0",
     "babel-plugin-macros": "^3.1.0",
+    "breakdance": "^3.0.1",
+    "cli": "^1.0.1",
     "clsx": "^1.1.1",
     "docusaurus2-dotenv": "^1.4.0",
     "firebase": "^9.9.0",

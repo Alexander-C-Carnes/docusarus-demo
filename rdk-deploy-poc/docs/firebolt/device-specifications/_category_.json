@@ -1,0 +1,10 @@
+{
+  "label": "Device Specifcations",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Device Specifcations"
+  }
+}
