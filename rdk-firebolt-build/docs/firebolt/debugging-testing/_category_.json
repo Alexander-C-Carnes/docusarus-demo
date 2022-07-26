@@ -1,0 +1,10 @@
+{
+  "label": "Debugging and Testing",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Debugging and Testing"
+  }
+}

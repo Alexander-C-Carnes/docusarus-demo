@@ -9,7 +9,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'RDK',
   tagline: 'RDK DOCUMENTATION',
-  url: 'https://fd05-2600-1700-5130-7b10-d9e0-b149-3073-9b60.ngrok.io/',//'https://github.com/Alexander-C-Carnes/docusarus-demo',
+  url: 'https://246c-2600-1700-5130-7b10-3024-8d85-3be4-f540.ngrok.io/',//'https://github.com/Alexander-C-Carnes/docusarus-demo',
   baseUrl:'/', //'/docs/',
   trailingSlash: true,
   onBrokenLinks: 'warn',
@@ -91,19 +91,7 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['rest', 'http', 'haskell', 'plsql', 'docker', 'nginx', 'markdown'],
       },
-      algolia: {
-        // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-        appId: 'NS6GBGYACO',
-        // Public API key: it is safe to commit it
-        apiKey: '8f0f11e3241b59574c5dd32af09acdc8',
-        indexName: 'hasura-graphql',
-        // Optional: see doc section below
-        // contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: 'external\\.com|domain\\.com',
-        // Optional: Algolia search parameters
-        // searchParameters: {},
-      },
+      
       // announcementBar: {
       //   id: 'announcementBar-3', // Increment on change
       //   content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus" >Twitter</a> ${TwitterSvg}`,
