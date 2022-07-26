@@ -17,13 +17,13 @@ function HomepageHeader() {
         <div className={styles.links}>
           <VersionedLink
             className="button button--primary button--lg"
-            to="/graphql/core/index">
-            Hasura Core Docs
+            to="/firebolt/getting-started/quick-start-guide">
+            Learn More
           </VersionedLink>
           <VersionedLink
             className="button button--success button--lg"
-            to="/graphql/cloud/index">
-            Hasura Cloud Docs
+            to="/firebolt/getting-started/quick-start-guide">
+            Firebolt Documentation
           </VersionedLink>
         </div>
         <div className={styles.links}>
@@ -33,7 +33,7 @@ function HomepageHeader() {
             Docs Wiki
           </Link>
         </div>
-        <img src={hasuras} alt="Hasuras Image" />
+        <img className="front-page-img" src={'https://source.unsplash.com/random?computers'} alt="Firebolt Image" />
       </div>
     </header>
   );

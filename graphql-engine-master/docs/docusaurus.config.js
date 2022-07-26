@@ -9,8 +9,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'RDK',
   tagline: 'RDK DOCUMENTATION',
-  url: 'https://github.com/Alexander-C-Carnes/docusarus-demo',
-  baseUrl: '/docs/',
+  url: 'https://fd05-2600-1700-5130-7b10-d9e0-b149-3073-9b60.ngrok.io/',//'https://github.com/Alexander-C-Carnes/docusarus-demo',
+  baseUrl:'/', //'/docs/',
   trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -74,8 +74,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      hideableSidebar: true,
-      autoCollapseSidebarCategories: true,
+      docs:{
+        sidebar:{
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
